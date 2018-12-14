@@ -34,9 +34,20 @@
 
 .main-video-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .main-video-link {
-  margin: 10px;   
+  margin-right: 10px;
+  padding: 10px 30px;
+  background: rgba(50,50,50,0.35);  
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.main-video-link:hover {
+  color:black;
+  background: #dddddd;
 }
