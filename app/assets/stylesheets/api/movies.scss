@@ -4,13 +4,14 @@
 
 
 .browse-container {
-  position: relative;
+  // position: relative;
 }
 
 .logged-header {
-  position: absolute;
+  position: fixed;
   width: 94%;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .main-thumb img {
@@ -20,5 +21,22 @@
 
 .main-thumb {
   // display: inline-block;
+  position: relative;
   background: linear-gradient(to top, #000, transparent);
+}
+
+.main-video-info {
+  padding-left: 55px;
+  position: absolute;
+  top: 60%;
+  width: 35%;
+}
+
+.main-video-links {
+  display: flex;
+  justify-content: center;
+}
+
+.main-video-link {
+  margin: 10px;   
 }
