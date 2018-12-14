@@ -12,3 +12,13 @@
   width: 94%;
   margin: 0 auto;
 }
+
+.main-thumb img {
+  position: relative;
+  z-index: -1;
+}
+
+.main-thumb {
+  // display: inline-block;
+  background: linear-gradient(to top, #000, transparent);
+}
