@@ -1,1 +1,1 @@
-json.partial! "api/movie.json.jbuilder", movie: @movie
+json.partial! "api/movies/movie.json.jbuilder", movie: @movie
