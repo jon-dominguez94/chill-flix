@@ -1,0 +1,24 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+
+jon = User.new({ email: 'jon@yahoo.com', password: 'password' })
+demo = User.new({ email: 'demo@gmail.com', password: 'password' })
+# jon.photo.attach({io: EzDownload.open('https://s3-us-west-1.amazonaws.com/chillflix-dev/pp.png'), filename: 'ppic.png'})
+# demo.photo.attach({io: EzDownload.open('https://s3-us-west-1.amazonaws.com/chillflix-dev/pp.png'), filename: 'ppic.png'})
+jon.save!
+demo.save!
+
+profile1 = Profile.new({ username: 'demo', user_id: demo.id })
+profile2 = Profile.new({ username: 'kids', user_id: demo.id})
+
+profile1.save!
+profile2.save!
+
+profile3 = Profile.new({ username: 'jon', user_id: jon.id})
+
+profile3.save!

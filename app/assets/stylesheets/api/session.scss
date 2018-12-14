@@ -1,0 +1,120 @@
+// Place all the styles related to the api/session controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.with-form {
+  background: image_url('bbg.jpg');
+}
+
+.modal-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-form {
+  margin: 30px auto;
+  width: 450px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.70);
+  // background: grey;
+  border-radius: 3px;
+}
+
+
+.session-form {
+  box-sizing: border-box;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.form-info {
+  margin: 20px;
+  padding: 0 5px;
+}
+
+.form-header {
+  font-size: 32px;
+  font-weight: bolder;
+  margin: 20px 0;
+  padding-bottom: 10px;
+}
+
+.form-inputs *{
+  border-radius: 3px;
+}
+
+.prompt {
+  position: absolute;
+  bottom: 40px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.form-text, .form-btn {
+  height: 50px;
+}
+
+.form-text {
+  background: #FFFFBB;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  color: black;
+  position: relative;
+}
+
+.form-text label {
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  width: 100%
+}
+
+.form-btn {
+  background-color: #e50914;
+  line-height: normal;
+  padding: 7px 8px;
+  font-weight: 700;
+  // border-radius: 3px;
+  text-align: center;
+}
+
+.form-input input[type="text"], .form-input input[type="password"] {
+  background: none;
+  outline: none;
+  border:none;
+  height: 30px;
+  font-size: 18px;
+  width: 90%;
+}
+
+.grey-text {
+  color: rgb(128, 128, 128);
+}
+
+.errorList {
+  // list-style: circle;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.demo-btn {
+  background-color: #555555;
+}
+
+.form-errors {
+  background-color: #e87c03;
+  color: white;
+  display:flex;
+  align-items: center;
+}

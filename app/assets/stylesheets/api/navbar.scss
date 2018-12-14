@@ -1,0 +1,143 @@
+.splash-container {
+  background: linear-gradient(to right, #000, transparent), image_url('bbg.jpg');
+  height: 100%;
+}
+
+.main-header, .nav-items, .nav-links, .nav-controls, .signup {
+  display: flex;
+  align-items: center;
+}
+
+.nav-controls {
+  position: relative;
+}
+
+.nav-controls * {
+  margin: 0 5px;
+}
+
+.main-header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.main-logo {
+  width: 160px;
+  height: 65px;
+  /* margin-left: 50px; */
+  z-index: 2;
+}
+
+.nav-items {
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.nav-items * {
+  color: lightgrey;
+}
+
+.nav-link-item:active {
+  font-weight: bolder;
+}
+.session-btn {
+  background-color: #e50914;
+  line-height: normal;
+  padding: 7px 8px;
+  font-weight: 400;
+  border-radius: 3px;
+  height: 50%;
+}
+
+.signup-container {
+  padding: 0 40px;
+  padding-top: 200px;
+  font-family: 'Ramabhadra', sans-serif;
+}
+
+.signup {
+  display: inline-block;
+  padding: 10px 8px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.signup a {
+  padding: 0;
+  margin: 0;
+}
+
+.signup-msg {
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+
+.signup-sub-msg {
+  font-size: 25px;
+  margin: 10px 0 25px 0;
+}
+
+.nav-link-item {
+  padding: 10px;
+}
+
+.profile-logo {
+  height: 35px;
+  width: 35px;
+}
+
+.profile-dropdown *:hover {
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 40px;
+  right: 0px;
+  width: 160px;
+  margin: 0;
+  overflow: hidden;
+  display:none;
+}
+
+#my-dropdown {
+  border: 0.2px solid #333333;
+  background: black;
+}
+
+#my-dropdown * {
+  font-size: 12px;
+}
+
+.drop-item{
+  margin: 0;
+  padding: 10px;
+  font-weight: 700;
+  // background-color: black;
+}
+
+.drop-item:hover {
+  cursor: pointer;
+}
+
+
+.manage-link {
+  border-bottom:  0.2px solid #333333;
+  // width: 100%;
+  padding: 20px 10px;
+  font-weight: 500;
+}
+
+
+.show {display: flex;}
