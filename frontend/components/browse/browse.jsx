@@ -4,7 +4,9 @@ import MoviesIndexContainer from '../movies/movies_index_container';
 
 const BrowseContainer = () => (
   <div className="browse-container">
-    <NavbarContainer />
+    <div className="logged-header">
+      <NavbarContainer />
+    </div>
     <MoviesIndexContainer />
   </div>
 );

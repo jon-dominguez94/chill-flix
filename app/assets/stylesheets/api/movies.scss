@@ -1,3 +1,14 @@
 // Place all the styles related to the api/movies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.browse-container {
+  position: relative;
+}
+
+.logged-header {
+  position: absolute;
+  width: 94%;
+  margin: 0 auto;
+}
