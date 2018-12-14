@@ -12,7 +12,7 @@ export const login = user => dispatch => {
     );
 };
 
-export const receiveCurrentUser = user => ({
+const receiveCurrentUser = user => ({
   type: RECEIVE_CURRENT_USER,
   user
 });
@@ -24,7 +24,7 @@ export const logout = () => dispatch => {
     );
 };
 
-export const logoutCurrentUser = () => ({
+const logoutCurrentUser = () => ({
   type: LOGOUT_CURRENT_USER,
   data: {}
 });
