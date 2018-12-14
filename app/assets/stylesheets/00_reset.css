@@ -34,8 +34,8 @@ body {
 
 body, html, main, .overall {
   max-width: 1200px;
-  /* height: 100%; 
-  margin: 0 auto; */
+  height: 100%; 
+  margin: 0 auto;
 }
 
 ol, ul {
