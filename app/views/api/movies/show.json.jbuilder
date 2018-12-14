@@ -1,0 +1,1 @@
+json.partial! "api/movie.json.jbuilder", movie: @movie
