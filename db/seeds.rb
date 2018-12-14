@@ -25,7 +25,7 @@ profile3.save!
 
 movie1 = Movie.new({ title: 'Old people', description: 'make a commercial' })
 movie1.thumbnail.attach({io: File.open('/Users/jondominguez/Desktop/oldtn.png'), filename: 'oldtn.png'})
-movie1.video.attach({io: File.open('/Users/jondominguez/Desktop/commercial.mov'), filename: 'old.mov'})
+movie1.video.attach({io: File.open('/Users/jondominguez/Desktop/commercial.mov'), filename: 'old.mp4'})
 
 movie1.save!
 

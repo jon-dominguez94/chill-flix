@@ -29,10 +29,14 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
-body, html, main, .overall {height: 100%; }
+body, html, main, .overall {
+  max-width: 1200px;
+  /* height: 100%; 
+  margin: 0 auto; */
+}
 
 ol, ul {
 	list-style: none;
