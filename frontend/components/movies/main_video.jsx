@@ -11,10 +11,17 @@ const MainVideo = (props) => {
 
       <h1 className="main-video-title">{props.video.title}</h1>
       <div className="main-video-links">
-        <Link to={`/videos/${props.video.id}`}>
-          <div className="main-video-link">Play</div>
+        <Link to={`/watch/${props.video.id}`}>
+          <div className="play-btn">
+            <div className="main-video-link">
+              <button className='button play'></button>
+              <span>Play</span>
+            </div>
+          </div>
         </Link>
+        <Link to={"/list"}>
          <div className="main-video-link">My List</div>
+        </Link>
      </div>
        <h2 className="main-video-description">{props.video.description}</h2>
 

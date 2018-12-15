@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .with-form {
-  background: image_url('bbg.jpg');
+  background-image: image-url('bbg.jpeg');
 }
 
 .modal-screen {
@@ -66,11 +66,17 @@
 }
 
 .form-text {
-  background: #FFFFBB;
+  // background: #FFFFBB;
+  background: #333;
   padding: 4px 8px;
   box-sizing: border-box;
   color: black;
   position: relative;
+}
+
+.form-input.form-text {
+  display: flex;
+  align-items: center;
 }
 
 .form-text label {

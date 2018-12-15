@@ -79,6 +79,7 @@ class SessionForm extends React.Component {
 
     return(
       <div className="splash-container with-form">
+        {/* {document.body.style.backgroundImage = "url('https://s3-us-west-1.amazonaws.com/chillflix-dev/bbg.jpeg')"} */}
         <div className="modal">
           <section className="modal-screen">
             <div className="main-header">
@@ -95,18 +96,18 @@ class SessionForm extends React.Component {
 
                   <div className="form-inputs">
                     <div className="form-input form-text">
-                      <label>
+                      {/* <label>
                         Email
-                        <br/>
-                      <input type="text" value={this.state.email} onChange={this.update("email")} />
-                      </label>
+                        <br/> */}
+                      <input placeholder="Email" type="text" value={this.state.email} onChange={this.update("email")} />
+                      {/* </label> */}
                     </div>
                     <div className="form-input form-text">
-                      <label>
+                      {/* <label>
                         Password
-                        <br/>
-                      <input type="password" value={this.state.password} onChange={this.update("password")} />
-                      </label>
+                        <br/> */}
+                      <input placeholder="Password" type="password" value={this.state.password} onChange={this.update("password")} />
+                      {/* </label> */}
                     </div>
                     
                     <button className="form-input form-btn" value={this.props.formType}>{this.props.formType}</button>

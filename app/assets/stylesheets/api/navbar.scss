@@ -1,6 +1,6 @@
 .splash-container {
-  background: linear-gradient(to right, #000, transparent), image_url('bbg.jpg');
-  height: 100%;
+  background: linear-gradient(to right, #000, transparent), image-url('bbg.jpeg');
+  height: 100vh;
 }
 
 .main-header, .nav-items, .nav-links, .nav-controls, .signup {
@@ -50,6 +50,11 @@
   font-weight: 400;
   border-radius: 3px;
   height: 50%;
+  // box-sizing: border-box;
+}
+
+.signin {
+  box-sizing: border-box;
 }
 
 .signup-container {

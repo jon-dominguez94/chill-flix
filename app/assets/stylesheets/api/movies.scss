@@ -45,9 +45,23 @@
   cursor: pointer;
   font-weight: 700;
   font-size: 14px;
+  border-color: transparent transparent transparent #dddddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-video-link:hover {
   color:black;
   background: #dddddd;
+  border-color: transparent transparent transparent #202020;
+}
+
+.button.play {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border-style: solid;
+  border-width: 8px 0px 8px 16px;
+  border-color: inherit;
 }
