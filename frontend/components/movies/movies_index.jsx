@@ -16,7 +16,8 @@ class MoviesIndex extends React.Component {
     if(this.props.movies.length === 0){
       return (<div></div>);
     }
-    const mainMovie = this.props.selectMovie(this.props.movies, "Old people");
+    const mainMovie = this.props.selectMovie(this.props.movies, "The Comeback");
+    // debugger
     return (
       <div className="movies-index">
         <MainVideo video={mainMovie} /> 
