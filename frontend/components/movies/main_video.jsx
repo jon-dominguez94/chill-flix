@@ -6,7 +6,8 @@ const MainVideo = (props) => {
    <div className="main-thumb">
 
      {/* <img src={props.video.thumbnail} /> */}
-     <img src="/assets/oldtn.png" alt=""/>
+     {/* <img src={image_url(/assets/oldtn.png)} alt=""/> */}
+     <img src={window.oldtn}/>
     
 
     <div className="main-video-info">
