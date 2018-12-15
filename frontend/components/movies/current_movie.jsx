@@ -1,17 +1,31 @@
 import React from 'react';
 
-class CurrentMovie = (props) => {
-  if(props.movie === undefined) {
-    return (<div></div>);
+class CurrentMovie extends React.Component {
+
+  constructor(props) {
+    super(props);
   }
-  return(
 
-    <video className="current-video" width="100vw" height="auto" controls>
-      <source src={props.movie.url} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  componentDidMount(){
+    if(this.props.movie === undefined){
+      const movieId = this.props.match.params.movieId;
+      this.props.fetchMovie(movieId);
+    }
+  }
 
-  )
+  render(){
+    if(this.props.movie === undefined) {
+      return (<div></div>);
+    }
+    return(
+
+      <video className="current-video" width="100vw" height="auto" controls>
+        <source src={this.props.movie.url} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+    )
+  }
 };
 
 export default CurrentMovie;
