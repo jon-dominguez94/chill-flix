@@ -96,18 +96,18 @@ class SessionForm extends React.Component {
 
                   <div className="form-inputs">
                     <div className="form-input form-text">
-                      {/* <label>
+                      {/* <label id="form-label">
                         Email
-                        <br/> */}
+                        <br/>
+                      </label> */}
                       <input placeholder="Email" type="text" value={this.state.email} onChange={this.update("email")} />
-                      {/* </label> */}
                     </div>
                     <div className="form-input form-text">
-                      {/* <label>
+                      {/* <label id="form-label2">
                         Password
-                        <br/> */}
+                        <br/>
+                      </label> */}
                       <input placeholder="Password" type="password" value={this.state.password} onChange={this.update("password")} />
-                      {/* </label> */}
                     </div>
                     
                     <button className="form-input form-btn" value={this.props.formType}>{this.props.formType}</button>

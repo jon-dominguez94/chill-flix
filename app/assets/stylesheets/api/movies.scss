@@ -9,7 +9,7 @@
 
 .logged-header {
   position: fixed;
-  width: 94%;
+  width: 100%;
   margin: 0 auto;
   z-index: 2;
 }
@@ -23,6 +23,7 @@
   // display: inline-block;
   position: relative;
   background: linear-gradient(to top, #000, transparent);
+  height: 75vh;
 }
 
 .main-video-info {

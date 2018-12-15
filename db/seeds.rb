@@ -32,7 +32,7 @@ movie1 = Movie.new({ title: 'Old people', description: 'make a commercial' })
 # movie1.thumbnail.attach({io: EzDownload.open('https://s3-us-west-1.amazonaws.com/chillflix-dev/oldtn.png'), filename: 'oldtn.png'})
 # movie1.video.attach({io: EzDownload.open('https://s3-us-west-1.amazonaws.com/chillflix-dev/commercial.mp4'), filename: 'old.mp4'})
 movie1.thumbnail.attach({io: File.open('/Users/jondominguez/Desktop/oldtn.png'), filename: 'oldtn.png'})
-movie1.video.attach({io: File.open('/Users/jondominguez/Desktop/commercial.mp4'), filename: 'old.mp4'})
+movie1.video.attach({io: File.open('/Users/jondominguez/Desktop/com.mp4'), filename: 'old.mp4'})
 
 
-# movie1.save!
+movie1.save!

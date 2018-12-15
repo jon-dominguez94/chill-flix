@@ -22,17 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (openDropdown.classList.contains('show')) {
           openDropdown.classList.remove('show');
         }
-        // document.getElementById("my-dropdown").classList.remove("show");
       }
     }
   };
-
-  // window.addEventListener("click", (e) => {
-  //   if(!e.target.matches(".profile-dropdown")){
-  //     document.getElementById("my-dropdown")
-  //   }
-  // });
-
   let store;
   if(window.currentUser){
     const preloadedState = {
