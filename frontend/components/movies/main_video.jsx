@@ -6,10 +6,7 @@ const MainVideo = (props) => {
    <div className="main-thumb">
 
      <img src={props.video.thumbnail} />
-    {/* <video width="320" height="240" controls>
-      <source src={props.video.url} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video> */}
+    
 
     <div className="main-video-info">
 
