@@ -6,8 +6,12 @@ const MainVideo = (props) => {
    <div className="main-thumb">
 
      <img src={props.video.thumbnail} />
+    {/* <video width="320" height="240" controls>
+      <source src={props.video.url} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video> */}
 
-     <div className="main-video-info">
+    <div className="main-video-info">
 
       <h1 className="main-video-title">{props.video.title}</h1>
       <div className="main-video-links">
@@ -19,8 +23,14 @@ const MainVideo = (props) => {
             </div>
           </div>
         </Link>
+
         <Link to={"/list"}>
-         <div className="main-video-link">My List</div>
+          <div className="list-btn">
+            <div className="main-video-link">
+              +
+              <span>My List</span>
+            </div>  
+          </div>
         </Link>
      </div>
        <h2 className="main-video-description">{props.video.description}</h2>
