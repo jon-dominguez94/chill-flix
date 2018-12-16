@@ -41,19 +41,24 @@
   top: 60%;
   width: 35%;
   max-width: 450px;
+  transition: top 0.3s;
 }
 
 .main-video-title {
   font-size: 30px;
   margin-bottom:25px;
   white-space: nowrap;
+  transition: font-size 0.3s;
 }
 
 .main-video-description {
   margin-top: 15px;
   line-height: 1.5;
   width: 100%;
-  min-width: 300px;;
+  min-width: 300px;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.5s, opacity 0.5s linear;
 }
 
 .main-video-links {
@@ -101,6 +106,18 @@
 
 @media screen and (max-width: 755px) {
   .main-video-description {
-    display: none !important;
+    // display: none !important;
+    visibility: hidden;
+    opacity: 0;
   }
+}
+
+@media screen and (max-width: 960px) {
+  .main-video-info {
+    top: 50% !important;
+  }
+  .main-video-title {
+    font-size: 20px !important;
+  }
+
 }
