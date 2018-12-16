@@ -1,0 +1,317 @@
+// #video-container {
+//   position: relative;
+//   width: 100vw;
+//   margin: 0 auto;
+//   height: auto;
+// }
+
+// #video-container:-webkit-full-screen {
+//   width: 100%;
+// }
+
+// .no-margin {
+//   margin: 0;
+// }
+
+// .current-video::-webkit-media-controls-enclosure {
+//   display: none !important;
+// }
+
+// a {
+//   text-decoration: none;
+// }
+
+// a:visited {
+//   color: inherit;
+// }
+
+// .control {
+//   -webkit-user-select: none;
+//   /* Chrome all / Safari all */
+//   -moz-user-select: none;
+//   /* Firefox all */
+//   -ms-user-select: none;
+//   /* IE 10+ */
+//   cursor: pointer;
+// }
+
+
+// /***********************
+//     video player
+// ************************/
+
+
+// .preview-controls {
+//   position: absolute;
+//   z-index: 2147483647;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   height: 80px;
+//   width: 100%;
+//   // display: none;
+// }
+
+// @-moz-document url-prefix() {
+//   .time-meter {
+//     padding-left: 0;
+//     margin-left: 0;
+//   }
+
+//   .preview-controls {
+//     top: -moz-calc(100% - 62px);
+//   }
+// }
+
+// .time-bar {
+//   display: block;
+//   padding: 0 1%;
+//   height: 20px;
+// }
+
+// .time-meter {
+//   width: 100%;
+// }
+
+// .control-bar {
+//   height: 40px;
+// }
+
+// .preview-controls-main {
+//   height: 40px;
+//   display: inline-block;
+//   vertical-align: middle;
+//   padding-left: 10px;
+//   font-size: 18px;
+// }
+
+// .preview-controls li {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .vid-icon {
+//   font-size: 32px;
+//   height: 32px;
+//   text-align: center;
+//   vertical-align: middle;
+// }
+
+// .time {
+//   padding-top: 9px;
+//   vertical-align: middle;
+// }
+
+// .right-side-controls {
+//   margin-top: 5px;
+//   float: right;
+// }
+
+// .right-side-controls div {
+//   position: relative;
+//   display: inline-block;
+// }
+
+// #volume-bar-holder {
+//   width: 70px;
+// }
+
+// #volume-bar {
+//   width: 100%;
+//   vertical-align: middle;
+//   margin-bottom: 9px;
+// }
+
+
+
+// /*sliders for chrome and other webkit browsers*/
+// input[type='range'] {
+//   -webkit-appearance: none;
+//   height: 3px;
+//   cursor: pointer;
+// }
+
+// input[type='range']:hover {
+//   height: 4px;
+// }
+
+// input[type='range']::-webkit-slider-runnable-track {
+//   -webkit-appearance: none;
+//   height: 3px;
+//   cursor: pointer;
+// }
+
+// input[type='range']::-webkit-slider-runnable-track:hover {
+//   height: 4px;
+// }
+
+// input[type='range']::-webkit-slider-thumb {
+//   -webkit-appearance: none;
+//   height: 12px;
+//   width: 12px;
+//   border-radius: 100%;
+//   margin-top: -4px;
+// }
+
+// /*sliders for firefox*/
+// input[type='range']::-moz-range-track {
+//   height: 3px;
+//   cursor: pointer;
+// }
+
+// input[type='range']::-moz-range-track:hover {
+//   height: 4px;
+// }
+
+// input[type='range']::-moz-range-thumb {
+//   height: 12px;
+//   width: 12px;
+//   border-radius: 100%;
+// }
+
+// /*sliders for internet explorer*/
+// input[type='range']::-ms-track {
+//   height: 3px;
+// }
+
+// input[type='range']::-ms-track:hover {
+//   height: 4px;
+// }
+
+// input[type='range']::-ms-thumb {
+//   height: 12px;
+//   width: 12px;
+//   border-radius: 100%;
+// }
+
+
+
+// /***********************
+//     colors
+// ************************/
+// .preview-controls{
+//     background-color: #eeeeee;
+//     opacity: 0.7;
+//     color: #424242;
+// }
+
+
+// /*colors - sliders for chrome and other webkit browsers*/
+// input[type='range']::-webkit-slider-runnable-track{
+//     background-color: #444;   
+// }
+// input[type='range']::-webkit-slider-thumb{
+//     background: #CCC;
+// }
+// /* colors - sliders for firefox*/
+// input[type='range']::-moz-range-track{
+//     background-color: #444;
+// }
+// input[type='range']::-moz-range-thumb{
+//     background: #CCC;
+// }
+// /*colors - sliders for internet explorer*/
+// input[type='range']::-ms-track{
+//     background-color: #444;
+// }
+// input[type='range']::-ms-thumb{
+//     background: #CCC;
+// }
+
+// /**responsive**/
+// /*general*/
+// @media (max-width: 570px){
+//     .wrapper{
+//         width: 100%;
+//     }
+//     .preview-controls{
+//         height: 50px;
+//         width: 100%;    
+//     }
+    
+//     .time-bar{
+//         margin-top: -4px;
+//         height: 10px;
+//     }
+    
+//     .control-bar{
+//         margin-top: 10px;
+//     }
+//     .preview-controls-main{
+//         padding-left: 5px;
+//         font-size: 16px;
+//     }
+//     .vid-icon{
+//         font-size: 26px;
+//         height: 26px;
+//     }
+    
+//     .right-side-controls{
+//         margin-top: 5px;
+//     }
+    
+    
+    
+    
+    
+//     /*sliders for chrome and other webkit browsers*/
+//     input[type='range']::-webkit-slider-runnable-track{
+//         height: 3px;  
+//     }
+//     input[type='range']::-webkit-slider-thumb{
+//         height: 10px;
+//         width: 10px;
+//     }
+//     /*sliders for firefox*/
+//     input[type='range']::-moz-range-thumb{
+//         height: 10px;
+//         width: 10px;
+//     }
+//     /*sliders for internet explorer*/
+//     input[type='range']::-ms-thumb{
+//         height: 10px;
+//         width: 10px;
+//     }
+    
+// }
+// @media (max-width: 480px){
+    
+//     #volume-bar-holder{
+//         display:none;
+//     }
+    
+    
+//     .time-bar{
+//         display:none;
+//     }
+    
+    
+// }
+
+
+
+// custom controls
+
+#video-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right:0;
+  padding: 5px;
+  
+}
+
+.button.play {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border-style: solid;
+  border-width: 8px 0px 8px 16px;
+  // border-color: inherit;
+  border-radius: 2px;
+  margin-right: 10px;
+  border-color: transparent transparent transparent #dddddd;
+}
