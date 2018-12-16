@@ -6,21 +6,27 @@ class Spinner extends React.Component {
   constructor(props) {
     super(props);
 
-    this.movies = props.movies.map(movie => {
+    const movies = props.movies.map(movie => {
       return (
         <div className="tn-scale">
+          {/* <p>{movie.title}</p> */}
           <SpinnerItem key={movie.id} movie={movie} />
         </div>
       );
     });
+
+    this.state = {
+      movies: movies
+    };
 
   }
 
   render() {
     return (
       <div className="spinner">
-        <h1>{this.props.category}</h1>
-        {this.movies}
+        <h1 className="category-header">{this.props.category}</h1>
+        {this.state.movies}
+        <div className="right-scroll"></div>
       </div>
     );
   }

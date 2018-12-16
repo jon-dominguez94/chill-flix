@@ -1,8 +1,17 @@
+
 .spinner-container {
   position: absolute;
   width: 100vw;
   height: auto;
   top: 95%;
+}
+.category-header {
+  position:absolute;
+  top: 20px;
+  left:0;
+  margin: 20px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .spinner {
@@ -15,7 +24,7 @@
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  // margin-bottom: 10px;
+  // margin-left: 50px;
 }
 
 .spinner h1{
@@ -26,13 +35,15 @@
   max-height: 400px;
   min-height: 230px;
   // height: 230px;
+  display: flex;
+  align-items: center;
 }
 
 .spinner-item{
   display: inline-block;
   height: 230px;
   margin: 0 3px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 .spinner-item:hover {
@@ -42,4 +53,13 @@
 .movie-tn {
   height: 100%;
   width: auto;
+}
+
+
+.right-scroll {
+  position: absolute;
+  height: 230px;
+  width: 50px;
+  background: rgba(0,0,0,0.5);
+  right: 0;
 }
