@@ -13,18 +13,18 @@ window.fetchMovie = movieUtil.fetchMovie;
 document.addEventListener("DOMContentLoaded", () => {
 
 
-  window.onclick = function (event) {
-    if (!event.target.matches('.profile-logo') && !event.target.matches(".fa-caret-down")) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  };
+  // window.onclick = function (event) {
+  //   if (!event.target.matches('.profile-logo') && !event.target.matches(".fa-caret-down")) {
+  //     var dropdowns = document.getElementsByClassName("dropdown-content");
+  //     var i;
+  //     for (i = 0; i < dropdowns.length; i++) {
+  //       var openDropdown = dropdowns[i];
+  //       if (openDropdown.classList.contains('show')) {
+  //         openDropdown.classList.remove('show');
+  //       }
+  //     }
+  //   }
+  // };
   let store;
   if(window.currentUser){
     const preloadedState = {
