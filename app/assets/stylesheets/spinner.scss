@@ -41,7 +41,8 @@
   display: flex;
   align-items: center;
   position:absolute;
-  left: 54px;
+  // left: -222px;
+  // margin-left: 54px;
   // perfect adjustment: 276px;
 }
 
@@ -62,10 +63,15 @@
   width: auto;
 }
 
+.spinner:hover > .scroll {
+  // display: flex;
+  visibility: 1;
+  opacity: 1;
+}
 
 .scroll {
   position: absolute;
-  height: 250px;
+  height: 150px;
   width: 57px;
   background: rgba(0,0,0,0.2);
   // background: linear-gradient(to left, #000, transparent);
@@ -75,6 +81,9 @@
   justify-content: center;
   align-items: center;
   font-size: 48px;
+   visibility: 0;
+   opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s linear;
 }
 
 .right.scroll {
