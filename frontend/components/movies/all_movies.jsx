@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from './carousel';
+import Spinner from './spinner';
 
 const AllVideos = (props) => {
 
@@ -14,13 +14,14 @@ const AllVideos = (props) => {
   const thumbnails = props.movies.map(movie => {
     return (
       // <img src={movie.thumbnail}/>
-      <img src={window.oldtn}/>
+      // <img src={window.oldtn}/>
+      <p>{movie.title}</p>
     );
   });
 
   return (
-    <div className="carousels-container">
-      <Carousel movies={shuffle(thumbnails)} />
+    <div className="spinner-container">
+      <Spinner movies={shuffle(props.movies)} />
     </div>
   );
 };

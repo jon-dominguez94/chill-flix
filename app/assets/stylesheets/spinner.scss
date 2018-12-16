@@ -1,0 +1,28 @@
+.spinner-container {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
+
+.spinner {
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  
+}
+
+.tn-scale {
+  height: 230px;
+}
+
+.spinner-item{
+  display: inline-block;
+  height: 100%;
+}
+
+.movie-tn {
+  height: 100%;
+  width: auto;
+}
