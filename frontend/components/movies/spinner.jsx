@@ -26,7 +26,9 @@ class Spinner extends React.Component {
       <div className="spinner">
         <h1 className="category-header">{this.props.category}</h1>
         {this.state.movies}
-        <div className="right-scroll"></div>
+        <div className="right-scroll">
+          <i class="fa fa-angle-right"></i>
+        </div>
       </div>
     );
   }

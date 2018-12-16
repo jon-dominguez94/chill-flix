@@ -43,7 +43,7 @@ const Navbar = (props) => {
             <div className="nav-links">
               <Link className="nav-link-item" to="/browse">Home</Link>
               <Link className="nav-link-item" to="/list">My List</Link>
-              <h1 className="nav-link-item">Welcome, {props.currentUser.email}!</h1>
+              {/* <h1 className="nav-link-item">Welcome, {props.currentUser.email}!</h1> */}
             </div>
             <div className="nav-controls" 
             >
