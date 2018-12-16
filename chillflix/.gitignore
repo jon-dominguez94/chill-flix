@@ -8,6 +8,7 @@
 *.sqlite
 bundle.js
 bundle.map.js
+config/master.key
 
 ### OSX ###
 
