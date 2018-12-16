@@ -80,10 +80,17 @@
 }
 
 .form-text label {
-  font-size: 10px;
+  font-size: 20px;
   position: absolute;
+  top: 30%;
+  // width: 100%;
+  color: rgb(128, 128, 128);
+  display: inline;
+}
+
+.form-text label {
+  font-size: 10px;
   top: 2px;
-  width: 100%
 }
 
 .form-btn {
@@ -102,6 +109,8 @@
   height: 30px;
   font-size: 18px;
   width: 90%;
+  color:white;
+  z-index: 10;
 }
 
 .grey-text {
