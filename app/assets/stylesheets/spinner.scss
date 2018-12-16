@@ -40,6 +40,9 @@
   // height: 150px;
   display: flex;
   align-items: center;
+  position:absolute;
+  left: 54px;
+  // perfect adjustment: 276px;
 }
 
 .spinner-item{
@@ -60,7 +63,7 @@
 }
 
 
-.right-scroll {
+.scroll {
   position: absolute;
   height: 250px;
   width: 60px;
@@ -74,7 +77,7 @@
   font-size: 48px;
 }
 
-.right-scroll:hover {
+.scroll:hover {
   background: rgba(0, 0, 0, 0.5);
   font-size: 60px;
 }

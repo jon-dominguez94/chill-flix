@@ -8,10 +8,9 @@ class Spinner extends React.Component {
 
     const movies = props.movies.map(movie => {
       return (
-        <div className="tn-scale">
-          {/* <p>{movie.title}</p> */}
-          <SpinnerItem key={movie.id} movie={movie} />
-        </div>
+        // <div className="tn-scale">
+        <SpinnerItem key={movie.id} movie={movie} />
+        // </div>
       );
     });
 
@@ -25,9 +24,14 @@ class Spinner extends React.Component {
     return (
       <div className="spinner">
         <h1 className="category-header">{this.props.category}</h1>
-        {this.state.movies}
-        <div className="right-scroll">
-          <i class="fa fa-angle-right"></i>
+        <div className="tn-scale">
+          {this.state.movies}
+        </div>
+        <div className="right scroll">
+          <i className="fa fa-angle-right scroll-btn"></i>
+        </div>
+        <div className="left scroll">
+          <i className="fa fa-angle-lef scroll-btn"></i>
         </div>
       </div>
     );
