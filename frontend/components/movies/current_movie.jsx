@@ -4,6 +4,8 @@ class CurrentMovie extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.goBack = this.goBack.bind(this);
   }
 
   componentDidMount(){
@@ -13,7 +15,10 @@ class CurrentMovie extends React.Component {
     }
   }
 
-  
+  goBack() {
+    this.props.history.goBack();
+  }
+
   render(){
     if(this.props.movie === undefined) {
       return (<div></div>);
@@ -26,13 +31,20 @@ class CurrentMovie extends React.Component {
           <source src={window.oldvid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div id="video-controls">
+        {/* <div id="video-controls"> */}
           {/* <button type="button" id="play-pause" value="0">Play</button> */}
-          <button className='button play current'></button>
+          {/* <button className='button play current'></button>
           <input type="range" id="seek-bar" defaultValue="0"/>
           <button type="button" id="mute">Mute</button>
           <input type="range" id="volume-bar" min="0" max="1" step="0.1" defaultValue="1" />
           <button type="button" id="full-screen">Full-Screen</button>
+        </div> */}
+
+        <div className="back-btn-container">
+          <button className="back-btn" onClick={() => this.goBack()}>
+            <i className="fa fa-arrow-left"></i>
+            <span className="back-text">Back to Browse</span>
+          </button>
         </div>
         
       </div>
