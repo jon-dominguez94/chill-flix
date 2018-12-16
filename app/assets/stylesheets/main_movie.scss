@@ -46,6 +46,7 @@
 .main-video-title {
   font-size: 30px;
   margin-bottom:25px;
+  white-space: nowrap;
 }
 
 .main-video-description {
@@ -96,3 +97,10 @@
   margin-right: 10px;
 }
 
+
+
+@media screen and (max-width: 755px) {
+  .main-video-description {
+    display: none !important;
+  }
+}
