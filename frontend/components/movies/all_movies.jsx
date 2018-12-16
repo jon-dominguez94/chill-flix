@@ -22,6 +22,7 @@ const AllVideos = (props) => {
   return (
     <div className="spinner-container">
       <Spinner movies={shuffle(props.movies)} />
+      <Spinner movies={shuffle(props.movies)} />
     </div>
   );
 };

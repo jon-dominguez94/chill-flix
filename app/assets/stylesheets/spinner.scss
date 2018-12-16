@@ -6,25 +6,35 @@
 
 .spinner {
   height: 400px;
+  // min-height: 230px;
   width: 100vw;
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
-  
+  align-items: center;
+  justify-content: center;
+  // margin-bottom: 10px;
 }
 
 .tn-scale {
-  height: 230px;
+  max-height: 400px;
+  min-height: 230px;
+  // height: 230px;
 }
 
 .spinner-item{
   display: inline-block;
-  height: 100%;
+  height: 230px;
   margin: 0 3px;
   margin-bottom: 20px;
+}
+
+.spinner-item:hover {
+  height: 400px;
 }
 
 .movie-tn {
   height: 100%;
   width: auto;
 }
+
