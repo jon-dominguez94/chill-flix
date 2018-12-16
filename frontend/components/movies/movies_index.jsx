@@ -1,5 +1,6 @@
 import React from 'react';
 import MainVideo from './main_video.jsx';
+import AllMovies from './all_movies';
 
 class MoviesIndex extends React.Component {
   constructor(props){
@@ -21,9 +22,10 @@ class MoviesIndex extends React.Component {
     return (
       <div>
         <div className="movies-index">
-          <MainVideo video={mainMovie} /> 
+          <MainVideo video={mainMovie} />
+          <AllMovies movies={this.props.movies} />
         </div>
-      </div >
+      </div>
     );
   }
 }

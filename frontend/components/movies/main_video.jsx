@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+
+
 const MainVideo = (props) => {
 
  return (
    <div className="main-thumb">
 
-     <img src={props.video.thumbnail} />
+     {/* <img src={props.video.thumbnail} /> */}
      {/* <img src={image_url('/assets/old.png')} alt=""/> */}
-     {/* <img src={window.oldtn}/> */}
+     <img src={window.oldtn}/>
     
 
     <div className="main-video-info">
@@ -31,9 +33,8 @@ const MainVideo = (props) => {
             </div>  
           </div>
         </Link>
-     </div>
+      </div>
        <h2 className="main-video-description">{props.video.description}</h2>
-
      </div>
    </div>
  )
