@@ -19,9 +19,11 @@ class MoviesIndex extends React.Component {
     const mainMovie = this.props.selectMovie(this.props.movies, "The Comeback");
     // debugger
     return (
-      <div className="movies-index">
-        <MainVideo video={mainMovie} /> 
-      </div>
+      <div>
+        <div className="movies-index">
+          <MainVideo video={mainMovie} /> 
+        </div>
+      </div >
     );
   }
 }
