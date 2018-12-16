@@ -4,6 +4,8 @@
   margin: 0 auto;
   height: auto;
   color: transparent;
+  -webkit-transition: color 0.7s;
+  transition: color 0.7s;
 }
 
 #video-container:hover {
@@ -309,17 +311,17 @@
   
 }
 
-.button.play {
-  box-sizing: border-box;
-  width: 16px;
-  height: 16px;
-  border-style: solid;
-  border-width: 8px 0px 8px 16px;
-  // border-color: inherit;
-  border-radius: 2px;
-  margin-right: 10px;
-  border-color: transparent transparent transparent #dddddd;
-}
+// .button.play {
+//   box-sizing: border-box;
+//   width: 16px;
+//   height: 16px;
+//   border-style: solid;
+//   border-width: 8px 0px 8px 16px;
+//   // border-color: inherit;
+//   border-radius: 2px;
+//   margin-right: 10px;
+//   border-color: transparent transparent transparent #dddddd;
+// }
 
 
 .back-btn-container {
