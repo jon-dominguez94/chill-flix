@@ -31,7 +31,7 @@ class Spinner extends React.Component {
           <i className="fa fa-angle-right scroll-btn"></i>
         </div>
         <div className="left scroll">
-          <i className="fa fa-angle-lef scroll-btn"></i>
+          <i className="fa fa-angle-left scroll-btn"></i>
         </div>
       </div>
     );

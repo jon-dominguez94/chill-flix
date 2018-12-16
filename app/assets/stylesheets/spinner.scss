@@ -66,10 +66,10 @@
 .scroll {
   position: absolute;
   height: 250px;
-  width: 60px;
+  width: 57px;
   background: rgba(0,0,0,0.2);
   // background: linear-gradient(to left, #000, transparent);
-  right: 0;
+  // right: 0;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -77,11 +77,20 @@
   font-size: 48px;
 }
 
+.right.scroll {
+  right: 0
+};
+
+.left.scroll {
+ left: 0;
+};
+
 .scroll:hover {
   background: rgba(0, 0, 0, 0.5);
   font-size: 60px;
 }
 
-.fa.fa-angle-right{
+.scroll-btn {
+  color: white;
   font-size: inherit;
 }
