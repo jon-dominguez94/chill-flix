@@ -1,22 +1,28 @@
 import React from 'react';
 import SpinnerItem from './spinneritem';
 
-const Spinner = (props) => {
+class Spinner extends React.Component {
 
+  constructor(props) {
+    super(props);
 
-  const movies = props.movies.map(movie => {
+    this.movies = props.movies.map(movie => {
+      return (
+        <div className="tn-scale">
+          <SpinnerItem key={movie.id} movie={movie} />
+        </div>
+      );
+    });
+
+  }
+
+  render() {
     return (
-      <div className="tn-scale">
-        <SpinnerItem key={movie.id} movie={movie} />
+      <div className="spinner">
+        {this.movies}
       </div>
     );
-  });
-
-  return (
-    <div className="spinner">
-      {movies}
-    </div>
-  )
+  }
 };
 
 export default Spinner;
