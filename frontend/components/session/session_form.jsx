@@ -32,7 +32,7 @@ class SessionForm extends React.Component {
         current.style.top = "30%";
         current.style.fontSize = "20px";
       } else {
-        current.style.top = "2px";
+        current.style.top = "4px";
         current.style.fontSize = "10px";
       }
     };
@@ -78,6 +78,11 @@ class SessionForm extends React.Component {
           onClick={
             (e) => {
               e.preventDefault();
+
+              document.getElementById("form-label").style.top = "4px";
+              document.getElementById("form-label").style.fontSize = "10px";
+              document.getElementById("form-label2").style.top = "4px";
+              document.getElementById("form-label2").style.fontSize = "10px";
               this.setState({ email: 'demo@gmail.com', password: 'password' });
               this.props.processForm({email: 'demo@gmail.com', password: 'password'});
             }
