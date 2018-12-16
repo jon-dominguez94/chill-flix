@@ -19,6 +19,7 @@ class Spinner extends React.Component {
   render() {
     return (
       <div className="spinner">
+        <h1>{this.props.category}</h1>
         {this.movies}
       </div>
     );

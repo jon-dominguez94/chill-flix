@@ -1,10 +1,12 @@
 .spinner-container {
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: auto;
+  top: 95%;
 }
 
 .spinner {
+  position: relative;
   height: 400px;
   // min-height: 230px;
   width: 100vw;
@@ -14,6 +16,10 @@
   align-items: center;
   justify-content: center;
   // margin-bottom: 10px;
+}
+
+.spinner h1{
+  color: white;
 }
 
 .tn-scale {
@@ -37,4 +43,3 @@
   height: 100%;
   width: auto;
 }
-
