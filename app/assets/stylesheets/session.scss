@@ -86,9 +86,12 @@
   // width: 100%;
   color: rgb(128, 128, 128);
   display: inline;
+  transition: top 0.2s, font-size 0.2s;
+  // font-size: 10px;
+  // top: 2px;
 }
 
-.form-text label {
+.not-empty {
   font-size: 10px;
   top: 2px;
 }

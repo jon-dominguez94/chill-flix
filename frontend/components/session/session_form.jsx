@@ -17,9 +17,24 @@ class SessionForm extends React.Component {
     this.props.clearErrors();
   }
 
-  update(field){
+  checkLabel(label){
+    // let current = document.getElementById(label);
+    // if(this.state)
+    // let formInput = 
+  }
+
+  update(field, label){
+    // this.checkLabel(label);
+    let current = document.getElementById(label);
     return e => {
       this.setState({ [field]: e.target.value });
+      if(e.target.value === ""){
+        current.style.top = "30%";
+        current.style.fontSize = "20px";
+      } else {
+        current.style.top = "2px";
+        current.style.fontSize = "10px";
+      }
     };
   }
 
@@ -100,14 +115,14 @@ class SessionForm extends React.Component {
                         Email
                         <br/>
                       </label>
-                      <input type="text" value={this.state.email} onChange={this.update("email")} />
+                      <input type="text" value={this.state.email} onChange={this.update("email", "form-label")} onFocus={this.checkLabel("form-label")}/>
                     </div>
                     <div className="form-input form-text">
                       <label id="form-label2">
                         Password
                         <br/>
                       </label>
-                      <input type="password" value={this.state.password} onChange={this.update("password")} />
+                      <input type="password" value={this.state.password} onChange={this.update("password", "form-label2")} onFocus={this.checkLabel("form-label2")} />
                     </div>
                     
                     <button className="form-input form-btn" value={this.props.formType}>{this.props.formType}</button>
