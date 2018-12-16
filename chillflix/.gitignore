@@ -9,6 +9,7 @@
 bundle.js
 bundle.map.js
 config/master.key
+storage/
 
 ### OSX ###
 
