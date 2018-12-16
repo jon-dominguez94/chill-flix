@@ -29,7 +29,7 @@ profile3.save!
 
 movie1 = Movie.new({ title: 'The Comeback', description: 'Once powerhouses in showbiz, this elderly couple wants to get back in the game.' })
 movie1.thumbnail.attach({io: open('https://s3-us-west-1.amazonaws.com/chillflix-prod/tn/old.png'), filename: 'old.png'})
-movie1.video.attach({io: open('https://s3-us-west-1.amazonaws.com/chillflix-prod/vids/old.mp4'), filename: 'commercial.mp4'})
+movie1.video.attach({io: open('https://s3-us-west-1.amazonaws.com/chillflix-prod/vids/commercial.mp4'), filename: 'old.mp4'})
 movie1.save!
 
 movie2 = Movie.new({ title: 'I Love You, Man', description: 'Friendless Peter Klaven goes on a series of man-dates to find a Best Man for his wedding. But, when his insta-bond with his new B.F.F. puts a strain on his relationship with his fiancée, can the trio learn to live happily ever after?' })

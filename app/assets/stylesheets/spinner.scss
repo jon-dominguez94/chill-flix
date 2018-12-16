@@ -3,7 +3,7 @@
   position: absolute;
   width: 100vw;
   height: auto;
-  top: 95%;
+  top: 85%;
 }
 .category-header {
   position:absolute;
@@ -12,6 +12,7 @@
   margin: 20px;
   font-weight: 700;
   font-size: 20px;
+  z-index: 0;
 }
 
 .spinner {
@@ -25,6 +26,7 @@
   align-items: center;
   justify-content: center;
   // margin-left: 50px;
+  // z-index: ;
 }
 
 .spinner h1{
@@ -43,6 +45,7 @@
   display: inline-block;
   height: 230px;
   margin: 0 3px;
+  z-index: 2;
   // margin-bottom: 20px;
 }
 
@@ -62,4 +65,5 @@
   width: 50px;
   background: rgba(0,0,0,0.5);
   right: 0;
+  z-index: 10;
 }
