@@ -206,3 +206,9 @@
   transition: visibility 0.3s,
   opacity 0.3s linear;
 }
+
+.expand-down{
+  position: absolute;
+  bottom:-20px;
+  font-size: 30px;
+}

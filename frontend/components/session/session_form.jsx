@@ -29,8 +29,8 @@ class SessionForm extends React.Component {
     return e => {
       this.setState({ [field]: e.target.value });
       if(e.target.value === ""){
-        current.style.top = "30%";
-        current.style.fontSize = "20px";
+        current.style.top = "33%";
+        current.style.fontSize = "16px";
       } else {
         current.style.top = "4px";
         current.style.fontSize = "10px";

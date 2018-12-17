@@ -14,7 +14,7 @@ class SpinnerItem extends React.Component {
     // e.stopPropagation();
     const allSpinners = document.getElementsByClassName("spinner-item");
     for(let i = 0; i < allSpinners.length; i++){
-      allSpinners[i].style.borderColor = "transparent";
+      allSpinners[i].style.border = "0";
     }
     const current = document.getElementById(`spinner-${this.props.order}-${this.props.movie.id}`)
     current.style.border = "4px solid white";
@@ -47,6 +47,10 @@ class SpinnerItem extends React.Component {
         
         <div className="info-down">
           <i className="fa fa-angle-down" onClick={this.expand}></i>
+        </div>
+
+        <div className="expand-down">
+          <i className="fa fa-carat-down"></i>
         </div>
       </div>
     )
