@@ -16,6 +16,7 @@ class SpinnerItem extends React.Component {
     const allCarets = document.getElementsByClassName("expand-down");
     for(let i = 0; i < allSpinners.length; i++){
       allSpinners[i].style.border = "0";
+      allSpinners[i].classList.add('enlarge');
       allCarets[i].style.display = "none";
     }
     const current = document.getElementById(`spinner-${this.props.order}-${this.props.movie.id}`);
