@@ -20,6 +20,10 @@ class Spinner extends React.Component {
 
   }
 
+  scroll(e) {
+    alert("scroll clicked");
+  }
+
   render() {
     return (
       <div className="spinner">
@@ -27,10 +31,10 @@ class Spinner extends React.Component {
         <div className="tn-scale">
           {this.state.movies}
         </div>
-        <div className="right scroll">
+        <div className="right scroll"  onClick={this.scroll}>
           <i className="fa fa-angle-right scroll-btn"></i>
         </div>
-        <div className="left scroll">
+        <div className="left scroll" onClick={this.scroll}>
           <i className="fa fa-angle-left scroll-btn"></i>
         </div>
       </div>

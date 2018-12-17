@@ -35,6 +35,7 @@
 }
 
 .tn-scale {
+  position: static;
   max-height: 250px;
   min-height: 150px;
   // height: 150px;
@@ -48,6 +49,7 @@
 
 .spinner-item{
   // display: inline-block;
+  position: relative;
   height: 150px;
   margin: 0 3px;
   z-index: 2;
