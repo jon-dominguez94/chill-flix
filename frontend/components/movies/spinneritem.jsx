@@ -17,7 +17,7 @@ class SpinnerItem extends React.Component {
       allSpinners[i].style.borderColor = "transparent";
     }
     const current = document.getElementById(`spinner-${this.props.order}-${this.props.movie.id}`)
-    current.style.borderColor = "white";
+    current.style.border = "4px solid white";
     current.classList.remove('enlarge');
   }
 

@@ -56,11 +56,17 @@
   cursor: pointer;
   // margin-bottom: 20px;
   transition: height 0.3s;
-  border: 4px solid transparent;
+  box-sizing: border-box;
+  border: 0;
 }
 
 .enlarge:hover {
   height: 250px;
+}
+
+.enlarge:hover>* {
+  visibility: visible;
+  opacity: 1;
 }
 
 // .spinner-item:hover {
@@ -135,11 +141,6 @@
 
 .fa.fa-angle-down:hover {
   color: red;
-}
-
-.enlarge:hover > * {
-  visibility: visible;
-  opacity: 1;
 }
 
 .play-area {
