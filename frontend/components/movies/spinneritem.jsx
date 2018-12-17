@@ -13,18 +13,17 @@ class SpinnerItem extends React.Component {
   expand(e){
     // e.stopPropagation();
     const allSpinners = document.getElementsByClassName("spinner-item");
-    // allSpinners.forEach(spinner => {
-    //   spinner.style.borderColor = "transparent";
-    // });
     for(let i = 0; i < allSpinners.length; i++){
       allSpinners[i].style.borderColor = "transparent";
     }
-    document.getElementById(`spinner-${this.props.order}-${this.props.movie.id}`).style.borderColor = "white";
+    const current = document.getElementById(`spinner-${this.props.order}-${this.props.movie.id}`)
+    current.style.borderColor = "white";
+    current.classList.remove('enlarge');
   }
 
   render() {
     return (
-      <div id={`spinner-${this.props.order}-${this.props.movie.id}`} className="spinner-item">
+      <div id={`spinner-${this.props.order}-${this.props.movie.id}`} className="spinner-item enlarge">
         {/* <img className="movie-tn" src={this.props.movie.thumbnail} /> */}
         <img className="movie-tn" src={window.oldtn} />
 
