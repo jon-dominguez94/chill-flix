@@ -10,7 +10,9 @@ class MoviesIndex extends React.Component {
   
   componentWillMount() {
     // debugger
-    this.props.fetchMovies();
+    if(this.props.movies.length === 0){
+      this.props.fetchMovies();
+    }
   }
 
   render(){

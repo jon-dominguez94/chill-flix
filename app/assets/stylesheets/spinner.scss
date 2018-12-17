@@ -51,7 +51,9 @@
   height: 150px;
   margin: 0 3px;
   z-index: 2;
+  cursor: pointer;
   // margin-bottom: 20px;
+  transition: height 0.3s;
 }
 
 .spinner-item:hover {
@@ -65,7 +67,7 @@
 
 .spinner:hover > .scroll {
   // display: flex;
-  visibility: 1;
+  visibility: visible;
   opacity: 1;
 }
 
@@ -81,9 +83,10 @@
   justify-content: center;
   align-items: center;
   font-size: 48px;
-   visibility: 0;
-   opacity: 0;
+  visibility: hidden;
+  opacity: 0;
   transition: visibility 0.3s, opacity 0.3s linear;
+  cursor: pointer;
 }
 
 .right.scroll {
