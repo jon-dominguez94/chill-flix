@@ -15,26 +15,26 @@ class SpinnerItem extends React.Component {
 
   render() {
     return (
-      // <div>
-      // <Link to={`/watch/${this.props.movie.id}`}>
-        <div className="spinner-item">
-          {/* <img className="movie-tn" src={this.props.movie.thumbnail} /> */}
-          {/* <p>{this.props.movie.title}</p> */}
-          <img className="movie-tn" src={window.oldtn} />
+      <div className="spinner-item">
+        {/* <img className="movie-tn" src={this.props.movie.thumbnail} /> */}
+        <img className="movie-tn" src={window.oldtn} />
 
-          <div className="play-area">
-            {/* <i className="fa fa-play-circle"></i> */}
-          <a href={`/watch/${this.props.movie.id}`} class="round-button">
-              <i class="fa fa-play fa-2x"></i>
-            </a>
-          </div>
-
-          <div className="info-down">
-            <i className="fa fa-angle-down" onClick={this.expand}></i>
-          </div>
+        <div className="tn-info">
+          <a href="#" class="round-button">
+            <i class="fa fa-play fa-2x"></i>
+          </a>
+          <p className="tn-title">{this.props.movie.title}</p>
         </div>
-    
-      // </Link>
+
+        <Link to={`/watch/${this.props.movie.id}`}>
+          <div className="play-area">
+            
+          </div>
+        </Link>
+        <div className="info-down">
+          <i className="fa fa-angle-down" onClick={this.expand}></i>
+        </div>
+      </div>
     )
   }
 };
