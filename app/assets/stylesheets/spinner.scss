@@ -17,7 +17,7 @@
 
 .spinner {
   position: relative;
-  min-height: 255px;
+  min-height: 270px;
   // min-height: 150px;
   width: 100vw;
   display: flex;
@@ -25,10 +25,12 @@
   overflow: hidden;
   flex-direction: column;
   // align-items: center;
-  // align-items: flex-start;
+  align-items: flex-start;
   justify-content: center;
   // margin-left: 55px;
   padding-left: 54px;
+  // padding-bottom: 100px;
+  padding-top: 25px;
   // padding-top:50px;
   // z-index: ;
   border: 1px solid red;
@@ -53,7 +55,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  top: 25px;
+  // top: 25px;
   // left: -222px;
   // margin-left: 54px;
   // perfect adjustment: 276px;
