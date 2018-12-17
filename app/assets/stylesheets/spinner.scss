@@ -209,6 +209,24 @@
 
 .expand-down{
   position: absolute;
-  bottom:-20px;
+  width: 100%;
+  bottom: -20px;
+  height: 20px;
   font-size: 30px;
+  color: white;
+  display: none;
+  // background: red;
+  // border: 2px solid red;
 }
+
+.expand-arrow-container {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+// .fa-caret-down.info {
+//   background: white;
+//   color: white;
+// }

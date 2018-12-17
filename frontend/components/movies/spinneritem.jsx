@@ -13,12 +13,16 @@ class SpinnerItem extends React.Component {
   expand(e){
     // e.stopPropagation();
     const allSpinners = document.getElementsByClassName("spinner-item");
+    const allCarets = document.getElementsByClassName("expand-down");
     for(let i = 0; i < allSpinners.length; i++){
       allSpinners[i].style.border = "0";
+      allCarets[i].style.display = "none";
     }
-    const current = document.getElementById(`spinner-${this.props.order}-${this.props.movie.id}`)
+    const current = document.getElementById(`spinner-${this.props.order}-${this.props.movie.id}`);
     current.style.border = "4px solid white";
     current.classList.remove('enlarge');
+    const caret = document.getElementById(`expand-${this.props.order}-${this.props.movie.id}`);
+    caret.style.display = "block";
   }
 
   render() {
@@ -49,8 +53,10 @@ class SpinnerItem extends React.Component {
           <i className="fa fa-angle-down" onClick={this.expand}></i>
         </div>
 
-        <div className="expand-down">
-          <i className="fa fa-carat-down"></i>
+        <div id={`expand-${this.props.order}-${this.props.movie.id}`} className="expand-down">
+          <div className="expand-arrow-container">
+            <i className="fa fa-caret-down info"></i>
+          </div>
         </div>
       </div>
     )
