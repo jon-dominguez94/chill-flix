@@ -37,8 +37,8 @@ const AllVideos = (props) => {
 
   return (
     <div className="spinner-container">
-      <Spinner category="Recently Added" movies={movies1} />
-      <Spinner category="Popular on Chillflix" movies={movies2} />
+      <Spinner category="Recently Added" movies={movies1} order="1"/>
+      <Spinner category="Popular on Chillflix" movies={movies2} order="2"/>
     </div>
   );
 };

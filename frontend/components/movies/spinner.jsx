@@ -9,7 +9,7 @@ class Spinner extends React.Component {
     const movies = props.movies.map(movie => {
       return (
         // <div className="tn-scale">
-        <SpinnerItem key={movie.id} movie={movie} />
+        <SpinnerItem key={movie.id} movie={movie} order={props.order}/>
         // </div>
       );
     });

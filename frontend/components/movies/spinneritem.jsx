@@ -7,15 +7,24 @@ class SpinnerItem extends React.Component {
     super(props);
 
     // this.playMovie = this.playMovie.bind(this);
+    this.expand = this.expand.bind(this);
   }
 
   expand(e){
-    e.stopPropagation();
+    // e.stopPropagation();
+    const allSpinners = document.getElementsByClassName("spinner-item");
+    // allSpinners.forEach(spinner => {
+    //   spinner.style.borderColor = "transparent";
+    // });
+    for(let i = 0; i < allSpinners.length; i++){
+      allSpinners[i].style.borderColor = "transparent";
+    }
+    document.getElementById(`spinner-${this.props.order}-${this.props.movie.id}`).style.borderColor = "white";
   }
 
   render() {
     return (
-      <div className="spinner-item">
+      <div id={`spinner-${this.props.order}-${this.props.movie.id}`} className="spinner-item">
         {/* <img className="movie-tn" src={this.props.movie.thumbnail} /> */}
         <img className="movie-tn" src={window.oldtn} />
 

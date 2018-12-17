@@ -14,17 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   // window.onclick = function (event) {
-  //   if (!event.target.matches('.profile-logo') && !event.target.matches(".fa-caret-down")) {
-  //     var dropdowns = document.getElementsByClassName("dropdown-content");
+  //   if (!event.target.matches('.spinner-item')) {
+  //     var dropdowns = document.getElementsByClassName("spinner-item");
   //     var i;
   //     for (i = 0; i < dropdowns.length; i++) {
-  //       var openDropdown = dropdowns[i];
-  //       if (openDropdown.classList.contains('show')) {
-  //         openDropdown.classList.remove('show');
-  //       }
+  //       // var openDropdown = dropdowns[i];
+  //       // if (openDropdown.classList.contains('show')) {
+  //       //   openDropdown.classList.remove('show');
+  //       // }
+  //       dropdowns[i].style.border = "4px solid transparent";
   //     }
   //   }
   // };
+
   let store;
   if(window.currentUser){
     const preloadedState = {
