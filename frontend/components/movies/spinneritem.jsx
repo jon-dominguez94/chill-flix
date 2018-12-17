@@ -14,11 +14,14 @@ class SpinnerItem extends React.Component {
   render() {
     return (
       <div>
-      <div className="spinner-item" onClick={this.expand}>
-        {/* <img className="movie-tn" src={this.props.movie.thumbnail} /> */}
-        {/* <p>{this.props.movie.title}</p> */}
-        <img className="movie-tn" src={window.oldtn} />
-      </div>
+        <div className="spinner-item" onClick={this.expand}>
+          {/* <img className="movie-tn" src={this.props.movie.thumbnail} /> */}
+          {/* <p>{this.props.movie.title}</p> */}
+          <img className="movie-tn" src={window.oldtn} />
+          <div className="info-down">}
+            <i className="fa fa-angle-down"></i>
+          </div>
+        </div>
       </div>
     )
   }

@@ -108,3 +108,29 @@
   color: white;
   font-size: inherit;
 }
+
+.info-down {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  bottom: -10px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.down-arrow-container {
+  display: flex;
+  justify-content: center;
+}
+
+.fa.fa-angle-down:hover {
+  color: red;
+}
+
+.spinner-item:hover > .info-down {
+  visibility: visible;
+  opacity: 1;
+}

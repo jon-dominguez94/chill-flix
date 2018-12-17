@@ -28,7 +28,9 @@ const MainVideo = (props) => {
         <Link to={"/list"}>
           <div className="list-btn">
             <div className="main-video-link">
-              +
+              <div className="plus-wrapper">
+                <i className="fa fa-plus"></i>
+               </div>
               <span>My List</span>
             </div>  
           </div>
