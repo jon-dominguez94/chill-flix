@@ -22,7 +22,7 @@
   width: 100vw;
   display: flex;
   // flex-wrap: nowrap;
-  overflow: visible;
+  overflow: hidden;
   flex-direction: column;
   // align-items: center;
   // align-items: flex-start;
@@ -53,13 +53,14 @@
   display: flex;
   align-items: center;
   position: relative;
-  top: 50px;
+  top: 25px;
   // left: -222px;
   // margin-left: 54px;
   // perfect adjustment: 276px;
 }
 
 .tn-wrapper {
+  height: 200px;
   display: flex;
   align-items: center;
 }
