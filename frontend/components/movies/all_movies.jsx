@@ -19,10 +19,13 @@ const AllVideos = (props) => {
     );
   });
 
+  const movies1 = shuffle(props.movies);
+  const movies2 = shuffle(movies1);
+
   return (
     <div className="spinner-container">
-      <Spinner category="Recently Added" movies={shuffle(props.movies)} />
-      <Spinner category="Popular on Chillflix" movies={shuffle(props.movies)} />
+      <Spinner category="Recently Added" movies={movies1} />
+      <Spinner category="Popular on Chillflix" movies={movies2} />
     </div>
   );
 };

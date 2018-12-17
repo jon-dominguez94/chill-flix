@@ -20,16 +20,16 @@ class SpinnerItem extends React.Component {
         <img className="movie-tn" src={window.oldtn} />
 
         <div className="tn-info">
-          <a href="#" class="round-button">
-            <i class="fa fa-play fa-2x"></i>
+          <a href="#" className="round-button">
+            <i className="fa fa-play fa-2x"></i>
           </a>
           <p className="tn-title">{this.props.movie.title}</p>
         </div>
 
+        
+
         <Link to={`/watch/${this.props.movie.id}`}>
-          <div className="play-area">
-            
-          </div>
+          <div className="play-area"></div>
         </Link>
         <div className="info-down">
           <i className="fa fa-angle-down" onClick={this.expand}></i>
