@@ -65,6 +65,7 @@
 .movie-tn {
   height: 100%;
   width: auto;
+  // z-index: -1;
 }
 
 .spinner:hover > .scroll {
@@ -118,6 +119,7 @@
   bottom: -10px;
   visibility: hidden;
   opacity: 0;
+  // z-index: 100;
   transition: visibility 0.5s, opacity 0.5s linear;
 }
 
@@ -133,4 +135,27 @@
 .spinner-item:hover > .info-down {
   visibility: visible;
   opacity: 1;
+}
+
+.round-button {
+  box-sizing: border-box;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding-top: 9px;
+  padding-left: 4px;
+  line-height: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  /* 	color:#f5f5f5; */
+  color: red;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 20%;
+  left: 10px;
 }
