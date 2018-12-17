@@ -14,7 +14,7 @@ const App = () => (
     </header>
     <Switch>
       <AuthRoute exact path="/" component={NavbarContainer} />
-      <ProtectedRoute exact path="/browse" component={BrowseContainer} />
+      <ProtectedRoute path="/browse" component={BrowseContainer} />
       <ProtectedRoute path="/list" component={NavbarContainer} />
       <ProtectedRoute path="/watch/:movieId" component={CurrentMovieContainer} />
       <AuthRoute path="/login" component={LoginFormContainer} />

@@ -1,6 +1,7 @@
 import React from 'react';
 import SpinnerItem from './spinneritem';
 import { Route } from 'react-router-dom';
+import MovieInfoContainer from './movie_info_container';
 
 class Spinner extends React.Component {
 
@@ -38,7 +39,7 @@ class Spinner extends React.Component {
         <div className="left scroll" onClick={this.scroll}>
           <i className="fa fa-angle-left scroll-btn"></i>
         </div>
-        {/* <Route path="/browse/:movieId" component={MovieInfoContainer}/> */}
+        <Route path="/browse/:movieId" component={MovieInfoContainer}/>
       </div>
     );
   }
