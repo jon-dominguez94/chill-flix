@@ -26,11 +26,17 @@ class SpinnerItem extends React.Component {
           <p className="tn-title">{this.props.movie.title}</p>
         </div>
 
-        
-
         <Link to={`/watch/${this.props.movie.id}`}>
           <div className="play-area"></div>
         </Link>
+
+        <div className="list-adder">
+          {/* <i className="fa fa-plus-circle fa-2x fa_custom"></i> */}
+          <div className="tn-plus-wrapper">
+            <span>+</span>
+          </div>
+        </div>
+        
         <div className="info-down">
           <i className="fa fa-angle-down" onClick={this.expand}></i>
         </div>

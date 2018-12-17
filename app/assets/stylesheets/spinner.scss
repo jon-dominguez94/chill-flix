@@ -132,17 +132,18 @@
   color: red;
 }
 
-.spinner-item:hover > .info-down {
+.spinner-item:hover > * {
   visibility: visible;
   opacity: 1;
 }
 
 .play-area {
-  height: 85%;
+  // height: 85%;
   position: absolute;
   top:0;
   left:0;
   right:0;
+  bottom: 0;
 }
 
 .round-button {
@@ -172,6 +173,30 @@
   position: absolute;
   top: 55%;
   left: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s linear;
 }
 
+.tn-plus-wrapper {
+  width: 30px;
+  height: 30px;
+  padding: 4px 0 10px 0;
+  border: 0.5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: 200;
+}
 
+.list-adder {
+  position: absolute;
+  right: 20px;
+  bottom: 16%;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s,
+  opacity 0.3s linear;
+}
