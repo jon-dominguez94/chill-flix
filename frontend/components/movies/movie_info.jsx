@@ -21,11 +21,16 @@ class MovieInfo extends React.Component {
 
 
     return(
-      <div className="attached-info">
-        <div className="popup-controls">
+      <div>
+        <div className="attached-info">
+          <div className="popup-controls">
 
+          </div>
+          <img src={window.oldtn}/>
         </div>
-        <img src={window.oldtn}/>
+        <div className="info-close">
+          <i className="fa fa-close"></i>
+        </div>
       </div>
     );
   }

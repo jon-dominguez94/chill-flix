@@ -24,6 +24,9 @@ class SpinnerItem extends React.Component {
     current.classList.remove('enlarge');
     const caret = document.getElementById(`expand-${this.props.order}-${this.props.movie.id}`);
     caret.style.display = "block";
+
+    const currSpinner = document.getElementById(`spinner-${this.props.order}`);
+    currSpinner.classList.add('buffed');
   }
 
   render() {
