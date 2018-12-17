@@ -61,6 +61,7 @@ class SpinnerItem extends React.Component {
             <i className="fa fa-caret-down info"></i>
           </div>
         </div>
+        
       </div>
     )
   }

@@ -18,8 +18,15 @@ class MovieInfo extends React.Component {
         <Redirect to="/browse" />
       );
     }
+
+
     return(
-      <div></div>
+      <div className="attached-info">
+        <div className="popup-controls">
+
+        </div>
+        <img src={window.oldtn}/>
+      </div>
     );
   }
 }

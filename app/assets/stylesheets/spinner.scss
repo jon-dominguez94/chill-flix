@@ -17,34 +17,51 @@
 
 .spinner {
   position: relative;
-  height: 250px;
+  min-height: 255px;
   // min-height: 150px;
   width: 100vw;
   display: flex;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  align-items: center;
-  justify-content: flex-start;
+  // flex-wrap: nowrap;
+  overflow: visible;
+  flex-direction: column;
+  // align-items: center;
+  // align-items: flex-start;
+  justify-content: center;
   // margin-left: 55px;
   padding-left: 54px;
+  // padding-top:50px;
   // z-index: ;
+  border: 1px solid red;
+  box-sizing: border-box;
 }
 
 .spinner h1{
   color: white;
 }
 
+
+// .test {
+//   display: flex;
+//   flex-direction: column;
+// }
+
 .tn-scale {
   // position: static;
-  max-height: 250px;
+  // max-height: 250px;
   min-height: 150px;
   // height: 150px;
   display: flex;
   align-items: center;
-  position:absolute;
+  position: relative;
+  top: 50px;
   // left: -222px;
   // margin-left: 54px;
   // perfect adjustment: 276px;
+}
+
+.tn-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .spinner-item{
