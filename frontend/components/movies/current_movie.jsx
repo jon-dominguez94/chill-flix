@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom';
 
 class CurrentMovie extends React.Component {
 
@@ -20,6 +21,11 @@ class CurrentMovie extends React.Component {
   }
 
   render(){
+    if (!this.props.valid) {
+      return (
+       <Redirect to="/" />
+      );
+    }
     if(this.props.movie === undefined) {
       return (<div></div>);
     }
