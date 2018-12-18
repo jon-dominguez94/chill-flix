@@ -16,11 +16,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  transition: all 0.3s linear;
+  // transition: all 0.3s linear;
 }
 
 .attached-info * {
-  transition: all 0.3s ease;
+  // transition: all 0.3s ease;
 }
 
 .drop-info-pic {
@@ -28,7 +28,7 @@
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
-  background: linear-gradient(to right, #000, transparent);
+  background: linear-gradient(to right, #141414, transparent);
 }
 
 .attached-info img{
@@ -59,7 +59,7 @@
 
 .movie-info-container {
   position: relative;
-  transition: visibility 0.5s ease, opacity 0.5s ease, height 0.3s linear
+  transition: visibility 0.5s ease, opacity 0.5s ease, height 0.3s linear;
   // transition: height 0.5s linear;
 }
 
@@ -101,6 +101,23 @@
 
 .info-red:hover{
   padding: 11px 31px;
+}
+
+.info-black, .info-black:hover {
+  background: black;
+  border: 0.5px solid white;
+  // border-color: transparent transparent transparent white;
+  color: white;
+  transition: padding 0.1s linear;
+}
+
+.info-black:hover{
+  padding: 11px 31px;
+  background: #141414;
+}
+
+.info-black, .info-red {
+  border-radius: 1px;
 }
 
 @media screen and (max-width: 755px) {

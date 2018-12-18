@@ -89,18 +89,18 @@ class MovieInfo extends React.Component {
                   <div className="play-btn">
                     <div className="main-video-link info-red">
                       <button className='button play'></button>
-                      <span>Play</span>
+                      <span>PLAY</span>
                     </div>
                   </div>
                 </Link>
 
                 <Link to={"/list"}>
                   <div className="list-btn">
-                    <div className="main-video-link">
+                    <div className="main-video-link info-black">
                       <div className="plus-wrapper">
                         <i className="fa fa-plus"></i>
                       </div>
-                      <span>My List</span>
+                      <span>MY LIST</span>
                     </div>
                   </div>
                 </Link>
