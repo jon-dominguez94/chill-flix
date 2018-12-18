@@ -65,7 +65,7 @@ class MovieInfo extends React.Component {
 
 
     return(
-      <div>
+      <div className="movie-info-container">
         <div className="attached-info">
           <div className="popup-controls">
 
@@ -75,6 +75,7 @@ class MovieInfo extends React.Component {
         <div className="info-close" onClick={this.close}>
           <i className="fa fa-close"></i>
         </div>
+        <div className="info-gradient"></div>
       </div>
     );
   }

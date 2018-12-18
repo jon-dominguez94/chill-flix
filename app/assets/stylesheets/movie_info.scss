@@ -27,6 +27,7 @@
   top: 235px;
   right: 30px;
   font-size: 40px;
+  cursor: pointer;
 }
 
 .buffed {
@@ -37,6 +38,17 @@
   top: 50px;
 }
 
+.movie-info-container {
+  position: relative;
+}
 
+.info-gradient {
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  left: 30%;
+  top: -25px;
+  background: red;
+}
 
 // object-fit: cover;
