@@ -12,6 +12,7 @@ const mstp = (state, ownProps) => {
   // debugger
   return ({
     valid,
+    valid_movie,
     movie: state.entities.movies[movieId]
   });
 };

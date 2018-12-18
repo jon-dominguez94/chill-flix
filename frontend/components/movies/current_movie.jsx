@@ -17,7 +17,7 @@ class CurrentMovie extends React.Component {
   }
 
   goBack() {
-    this.props.history.goBack();
+    this.props.history.push("/browse");
   }
 
   render(){
