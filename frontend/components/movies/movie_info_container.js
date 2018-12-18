@@ -19,7 +19,7 @@ const mstp = (state, ownProps) => {
 
 const mdtp = dispatch => {
   return ({
-
+    fetchMovie: id => dispatch(fetchMovie(id))
   });
 };
 

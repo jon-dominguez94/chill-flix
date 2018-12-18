@@ -14,12 +14,14 @@
   // margin-bottom: 50px;
   margin-top: 5px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .attached-info img{
   height:100%;
   width: auto;
+  // object-fit: contain;
 }
 
 .info-close{
@@ -43,6 +45,10 @@
   position: relative;
 }
 
+.movie-info-container img{
+  // object-fit: cover;
+}
+
 .info-gradient {
   position: absolute;
   height: 100%;
@@ -54,3 +60,27 @@
 }
 
 // object-fit: cover;
+
+.popup-controls {
+  width: 30%;
+  height: 100%;
+}
+
+.on-popup {
+  top: 20%;
+}
+
+.space-below {
+  margin-bottom: 20px;
+}
+
+.info-red, .info-red:hover {
+  background: red;
+  border-color: transparent transparent transparent white;
+  color: white;
+  transition: padding 0.1s linear;
+}
+
+.info-red:hover{
+  padding: 11px 31px;
+}

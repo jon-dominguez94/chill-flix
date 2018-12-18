@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 class MovieInfo extends React.Component {
   constructor(props){
@@ -9,8 +9,9 @@ class MovieInfo extends React.Component {
   }
 
   componentDidMount() {
-    if(!this.props.valid){
-      
+    if(!this.props.movie === undefined){
+      let movieId = this.props.match.params.movieId;
+      this.props.fetchMovie(movieId);
     }
     this.addEffects();
   }
@@ -69,6 +70,33 @@ class MovieInfo extends React.Component {
       <div className="movie-info-container">
         <div className="attached-info">
           <div className="popup-controls">
+
+            <div className="main-video-info on-popup">
+
+              <h1 className="main-video-title">{this.props.movie.title}</h1>
+              <h2 className="main-video-description space-below">{this.props.movie.description}</h2>
+              <div className="main-video-links">
+                <Link to={`/watch/${this.props.movie.id}`}>
+                  <div className="play-btn">
+                    <div className="main-video-link info-red">
+                      <button className='button play'></button>
+                      <span>Play</span>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link to={"/list"}>
+                  <div className="list-btn">
+                    <div className="main-video-link">
+                      <div className="plus-wrapper">
+                        <i className="fa fa-plus"></i>
+                      </div>
+                      <span>My List</span>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
 
           </div>
           <img src={window.oldtn}/>
