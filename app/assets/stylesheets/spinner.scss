@@ -27,6 +27,7 @@
   display: flex;
   // flex-wrap: nowrap;
   overflow: hidden;
+  overflow: scroll;
   flex-direction: column;
   // align-items: center;
   align-items: flex-start;
@@ -38,6 +39,7 @@
   // z-index: ;
   // border: 1px solid red;
   box-sizing: border-box;
+  // transition: all 1s linear;
 }
 
 .spinner h1{
@@ -60,7 +62,7 @@
   position: relative;
   // overflow: scroll;
   // top: 25px;
-  left: -222px;
+  // left: -222px;
   // margin-left: 54px;
   // perfect adjustment: 276px;
 }
@@ -77,7 +79,7 @@
   position: relative;
   height: 150px;
   margin: 0 3px;
-  z-index: 5;
+  z-index: 20;
   cursor: pointer;
   // margin-bottom: 20px;
   transition: height 0.3s, border 0.5s ease;
