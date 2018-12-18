@@ -25,6 +25,15 @@ class SpinnerItem extends React.Component {
     const caret = document.getElementById(`expand-${this.props.order}-${this.props.movie.id}`);
     caret.style.display = "block";
     
+
+    //for styling info drop down
+
+    // const currDrop = document.getElementById(`info-drop-container-${this.props.order}`);
+    // currDrop.classList.add('info-drop-shown');
+
+
+
+
     const currSpinner = document.getElementById(`spinner-${this.props.order}`);
     currSpinner.classList.add('buffed');
     const currScrolls = document.getElementsByClassName(`scroll-${this.props.order}`);
