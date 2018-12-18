@@ -15,7 +15,18 @@ class MoviesIndex extends React.Component {
     }
   }
 
+  removeAllStylings() {
+    const allSpinners = document.getElementsByClassName("spinner-item");
+    for (let i = 0; i < allSpinners.length; i++) {
+      allSpinners[i].style.border = "0";
+      allSpinners[i].classList.remove("buffed");
+    }
+  }
+
   render(){
+
+    this.removeAllStylings();
+
     if(this.props.movies.length === 0){
       return (<div></div>);
     }

@@ -59,6 +59,8 @@
 
 .movie-info-container {
   position: relative;
+  transition: visibility 0.5s ease, opacity 0.5s ease, height 0.3s linear
+  // transition: height 0.5s linear;
 }
 
 .movie-info-container img{

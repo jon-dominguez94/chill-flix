@@ -46,7 +46,12 @@ class MovieInfo extends React.Component {
   close() {
     // alert('close clicked');
     this.removeEffects();
-    this.props.history.push('/browse');
+    // this.props.history.push('/browse');
+    // document.getElementsByClassName("movie-info-container")[0].style.display = "none";
+    document.getElementsByClassName("movie-info-container")[0].style.visibility = "hidden";
+    document.getElementsByClassName("movie-info-container")[0].style.opacity = "0";
+    document.getElementsByClassName("movie-info-container")[0].style.height = "0";
+    document.getElementById(`spinner-${spinnerId}`).classList.add('buffed');
   }
 
   render() {

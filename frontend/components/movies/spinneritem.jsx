@@ -31,9 +31,26 @@ class SpinnerItem extends React.Component {
     for (let i = 0; i < currScrolls.length; i++) {
       currScrolls[i].classList.add('scroll-buffed');
     }
+    const allPopups = document.getElementsByClassName(`movie-info-container`);
+    for (let i = 0; i < allPopups.length; i++) {
+      allPopups[i].style.visibility = "visible";
+      allPopups[i].style.opacity = "1";
+      allPopups[i].style.height = "100%";
+    }
+  }
+
+  removeAllStylings() {
+    const allSpinners = document.getElementsByClassName("spinner-item");
+    for (let i = 0; i < allSpinners.length; i++) {
+      allSpinners[i].style.border = "0";
+      allSpinners[i].classList.add('enlarge');
+      allCarets[i].style.display = "none";
+    }
   }
 
   render() {
+
+
     return (
       <div id={`spinner-${this.props.order}-${this.props.movie.id}`} className="spinner-item enlarge">
         {/* <img className="movie-tn" src={this.props.movie.thumbnail} /> */}
