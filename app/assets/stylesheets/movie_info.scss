@@ -28,12 +28,16 @@
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
+  background: linear-gradient(to right, #000, transparent);
 }
 
 .attached-info img{
   height:100%;
-  // width: auto;
+  // width: 90%;
   object-fit: cover;
+  visibility: visible;
+  opacity: 1;
+  z-index: -1;
 }
 
 .info-close{
@@ -99,6 +103,11 @@
 
 @media screen and (max-width: 755px) {
   .main-video-description {
+    // display: none !important;
+    visibility: visible;
+    opacity: 1;
+  }
+  .attached-info img {
     // display: none !important;
     visibility: hidden;
     opacity: 0;
