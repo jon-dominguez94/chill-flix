@@ -74,7 +74,7 @@ movie9.video.attach({io: open('https://s3-us-west-1.amazonaws.com/chillflix-prod
 movie9.save!
 
 movie10 = Movie.new({ title: 'Stranger Things', description: 'When a young boy disappears, his mother, a police chief, and his friends must confront terrifying forces in order to get him back.' })
-movie10.thumbnail.attach({io: open('https://s3-us-west-1.amazonaws.com/chillflix-prod/tn/ss.png'), filename: 'ss.png'})
+movie10.thumbnail.attach({io: open('https://s3-us-west-1.amazonaws.com/chillflix-prod/tn/st.png'), filename: 'ss.png'})
 movie10.video.attach({io: open('https://s3-us-west-1.amazonaws.com/chillflix-prod/vids/ss.mp4'), filename: 'ss.mp4'})
 movie10.save!
 

@@ -40,11 +40,11 @@ class Spinner extends React.Component {
     if(direction === "left"){
       newMovies.push(newMovies.shift());
       newMovies.push(newMovies.shift());
-      newMovies.push(newMovies.shift());
+      // newMovies.push(newMovies.shift());
     } else {
       newMovies.unshift(newMovies.pop());
       newMovies.unshift(newMovies.pop());
-      newMovies.unshift(newMovies.pop());
+      // newMovies.unshift(newMovies.pop());
     }
     this.setState({ movies: newMovies });
     // setTimeout(() => {
