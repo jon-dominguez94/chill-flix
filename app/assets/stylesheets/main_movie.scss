@@ -50,10 +50,11 @@
 }
 
 .main-video-title {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom:25px;
   white-space: nowrap;
   transition: font-size 0.3s;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main-video-description {
@@ -127,7 +128,7 @@
     top: 50% !important;
   }
   .main-video-title {
-    font-size: 20px !important;
+    font-size: 25px !important;
   }
 
 }
