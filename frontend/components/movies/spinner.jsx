@@ -24,6 +24,7 @@ class Spinner extends React.Component {
 
   scroll(e) {
     alert("scroll clicked");
+    
   }
 
   renderInfo(){
