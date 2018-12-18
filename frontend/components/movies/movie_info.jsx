@@ -15,7 +15,8 @@ class MovieInfo extends React.Component {
   render() {
     if (!this.props.valid) {
       return(
-        <Redirect to="/browse" />
+        <div></div>
+        // <Redirect to="/browse" />
       );
     }
 
