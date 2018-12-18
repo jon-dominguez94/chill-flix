@@ -19,6 +19,11 @@
   width: 100%;
   margin: 0 auto;
   z-index: 100;
+  transition: background 0.8s linear;
+}
+
+.black-bg {
+  background: #141414;
 }
 
 .main-thumb img {

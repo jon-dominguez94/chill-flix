@@ -27,6 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
   //   }
   // };
 
+  window.addEventListener("scroll", (e) => {
+    const header = document.getElementsByClassName("logged-header");
+    if(header.length > 0){
+      if(window.scrollY !== 0){
+        header[0].classList.add('black-bg');
+      } else {
+        header[0].classList.remove('black-bg');
+      }
+    } 
+  });
+
   let store;
   if(window.currentUser){
     const preloadedState = {

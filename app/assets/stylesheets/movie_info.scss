@@ -16,6 +16,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: all 0.3s linear;
+}
+
+.attached-info * {
+  transition: all 0.3s linear;
 }
 
 .attached-info img{
