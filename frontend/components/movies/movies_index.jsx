@@ -17,9 +17,11 @@ class MoviesIndex extends React.Component {
 
   removeAllStylings() {
     const allSpinners = document.getElementsByClassName("spinner-item");
+    const allCarets = document.getElementsByClassName("expand-down");
     for (let i = 0; i < allSpinners.length; i++) {
       allSpinners[i].style.border = "0";
       allSpinners[i].classList.remove("buffed");
+      allCarets[i].style.display = "none";
     }
   }
 
