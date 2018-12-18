@@ -30,17 +30,21 @@ const AllVideos = (props) => {
     );
   });
 
-  let movies = Array.from(props.movies);
-  // let movies2 = Array.from(props.movies);
-  // shuffle(movies1);
-  // shuffle(movies2);
+  let movies1 = Array.from(props.movies);
+  let movies2 = Array.from(props.movies);
+  let movies3 = Array.from(props.movies);
+  let movies4 = Array.from(props.movies);
+  shuffle(movies1);
+  shuffle(movies2);
+  shuffle(movies3);
+  shuffle(movies4);
 
   return (
     <div className="spinner-container">
-      <Spinner category="Recently Added" movies={shuffle(movies)} order="1"/>
-      <Spinner category="Popular on Chillflix" movies={shuffle(movies)} order="2"/>
-      <Spinner category="Chill Night" movies={shuffle(movies)} order="3"/>
-      <Spinner category="Because You Watched The Comeback" movies={shuffle(movies)} order="4"/>
+      <Spinner category="Recently Added" movies={shuffle(movies1)} order="1"/>
+      <Spinner category="Popular on Chillflix" movies={shuffle(movies2)} order="2"/>
+      <Spinner category="Chill Night" movies={shuffle(movies3)} order="3"/>
+      <Spinner category="Because You Watched The Comeback" movies={shuffle(movies4)} order="4"/>
     </div>
   );
 };
