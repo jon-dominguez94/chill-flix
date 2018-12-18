@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import CurrentMovie from './current_movie';
 import { fetchMovie } from '../../actions/movies_actions';
+import { withRouter } from 'react-router-dom';
 
 const mstp = (state, ownProps) => {
   const movieId = ownProps.match.params.movieId;
@@ -17,4 +18,4 @@ const mdtp = dispatch => {
   });
 };
 
-export default connect(mstp, mdtp)(CurrentMovie);
+export default withRouter(connect(mstp, mdtp)(CurrentMovie));

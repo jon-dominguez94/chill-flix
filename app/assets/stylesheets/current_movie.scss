@@ -16,6 +16,15 @@
   width: 100%;
 }
 
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.not-found p{
+  font-size: 48px;
+}
 // .no-margin {
 //   margin: 0;
 // }

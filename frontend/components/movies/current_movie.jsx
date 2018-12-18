@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 
 class CurrentMovie extends React.Component {
 
@@ -16,18 +16,35 @@ class CurrentMovie extends React.Component {
     }
   }
 
+  componentDidUpdate(){
+    if (!this.props.movie === undefined) {
+      this.props.history.push("/");
+    }
+  }
+
   goBack() {
     this.props.history.push("/browse");
   }
 
   render(){
+    if(this.props.movie === undefined) {
+      return (
+        <div className="not-found">
+          <p>Sorry, nothing to see here</p>
+          <Link className="nav-link-item" to="/">
+            <div className="back-btn-container">
+              <button className="back-btn" >
+                <i className="fa fa-arrow-left"></i>
+                <span className="back-text">Back to Browse</span>
+              </button>
+            </div>
+          </Link>
+        </div>);
+    }
     if (!this.props.valid) {
       return (
-       <Redirect to="/" />
+        <Redirect to="/" />
       );
-    }
-    if(this.props.movie === undefined) {
-      return (<div></div>);
     }
     return(
       
@@ -46,13 +63,14 @@ class CurrentMovie extends React.Component {
           <input type="range" id="volume-bar" min="0" max="1" step="0.1" defaultValue="1" />
           <button type="button" id="full-screen">Full-Screen</button>
         </div> */}
-
+        <Link className="nav-link-item" to="/">
         <div className="back-btn-container">
-          <button className="back-btn" onClick={() => this.goBack()}>
+          <button className="back-btn" >
             <i className="fa fa-arrow-left"></i>
             <span className="back-text">Back to Browse</span>
           </button>
         </div>
+        </Link>
         
       </div>
 
