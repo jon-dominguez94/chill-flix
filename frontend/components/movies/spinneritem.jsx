@@ -29,7 +29,7 @@ class SpinnerItem extends React.Component {
     currSpinner.classList.add('buffed');
     const currScrolls = document.getElementsByClassName(`scroll-${this.props.order}`);
     for (let i = 0; i < currScrolls.length; i++) {
-      currScrolls[i].classList.add('scroll-buffed');
+      // currScrolls[i].classList.add('scroll-buffed');
     }
     const allPopups = document.getElementsByClassName(`movie-info-container`);
     for (let i = 0; i < allPopups.length; i++) {
