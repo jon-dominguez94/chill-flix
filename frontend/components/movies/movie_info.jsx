@@ -99,7 +99,9 @@ class MovieInfo extends React.Component {
             </div>
 
           </div>
-          <img src={window.oldtn}/>
+          <div className="drop-info-pic">
+            <img src={window.oldtn}/>
+          </div>
             {/* <div className="info-gradient"></div> */}
           {/* </img> */}
         </div>

@@ -20,13 +20,20 @@
 }
 
 .attached-info * {
-  transition: all 0.3s linear;
+  transition: all 0.3s ease;
+}
+
+.drop-info-pic {
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .attached-info img{
   height:100%;
-  width: auto;
-  // object-fit: contain;
+  // width: auto;
+  object-fit: cover;
 }
 
 .info-close{
@@ -88,4 +95,23 @@
 
 .info-red:hover{
   padding: 11px 31px;
+}
+
+@media screen and (max-width: 755px) {
+  .main-video-description {
+    // display: none !important;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .on-popup {
+    top: 10% !important;
+  }
+
+  .main-video-title {
+    font-size: 20px !important;
+  }
+
 }
