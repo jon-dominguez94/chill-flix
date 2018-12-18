@@ -24,14 +24,15 @@
 
 .info-close{
   position: absolute;
-  top: 235px;
-  right: 30px;
+  top: 15px;
+  right: 90px;
   font-size: 40px;
   cursor: pointer;
+  z-index: 99;
 }
 
 .buffed {
-  padding-top: 25px;
+  padding-top: 35px;
 }
 
 .scroll-buffed {
@@ -45,10 +46,11 @@
 .info-gradient {
   position: absolute;
   height: 100%;
-  width: 30%;
-  left: 30%;
+  width: 50%;
+  left: 47%;
   top: -25px;
-  background: red;
+  // background: red;
+  background: linear-gradient(to right, #000, transparent);
 }
 
 // object-fit: cover;

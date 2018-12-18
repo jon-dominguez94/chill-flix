@@ -24,6 +24,7 @@ class MovieInfo extends React.Component {
     if(current !== null) {
       current.style.border = "4px solid white";
       current.classList.remove('enlarge');
+      document.getElementById(`spinner-${spinnerId}`).classList.add('buffed');
     }
     const caret = document.getElementById(`expand-${spinnerId}-${movieId}`);
     if(caret !== null){
@@ -71,11 +72,12 @@ class MovieInfo extends React.Component {
 
           </div>
           <img src={window.oldtn}/>
+            {/* <div className="info-gradient"></div> */}
+          {/* </img> */}
         </div>
         <div className="info-close" onClick={this.close}>
           <i className="fa fa-close"></i>
         </div>
-        <div className="info-gradient"></div>
       </div>
     );
   }

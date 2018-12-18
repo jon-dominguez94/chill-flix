@@ -41,7 +41,7 @@ const Navbar = (props) => {
           </div>
           <div className="nav-items">
             <div className="nav-links">
-              <Link className="nav-link-item" to="/browse">Home</Link>
+              <Link className="nav-link-item" to="/">Home</Link>
               <Link className="nav-link-item" to="/list">My List</Link>
               {/* <h1 className="nav-link-item">Welcome, {props.currentUser.email}!</h1> */}
             </div>

@@ -56,7 +56,7 @@
   align-items: center;
   position: relative;
   // top: 25px;
-  // left: -222px;
+  left: -222px;
   // margin-left: 54px;
   // perfect adjustment: 276px;
 }
@@ -75,7 +75,7 @@
   z-index: 2;
   cursor: pointer;
   // margin-bottom: 20px;
-  transition: height 0.3s;
+  transition: height 0.3s, border 0.4s linear;
   box-sizing: border-box;
   border: 0;
 }
