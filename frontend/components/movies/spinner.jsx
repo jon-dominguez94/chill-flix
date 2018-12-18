@@ -20,11 +20,33 @@ class Spinner extends React.Component {
       movies: movies
     };
 
+    this.movies = movies;
+
+    this.scroll = this.scroll.bind(this);
+
   }
 
-  scroll(e) {
-    alert("scroll clicked");
-    
+  componentDidUpdate(){
+    // document.getElementById(`scaler-${this.props.order}`).classList.remove("shifted-left");
+  }
+
+  scroll(direction) {
+    // alert(`scroll ${direction}`);
+    // alert(this.props.order);
+    // const currSpinner = document.getElementById(`scaler-${this.props.order}`);
+    // currSpinner.classList.add("shifted-left");
+    // alert(currSpinner.style.width);
+    let newMovies = Array.from(this.state.movies);
+    if(direction === "left"){
+      newMovies.push(newMovies.shift());
+    } else {
+      newMovies.unshift(newMovies.pop());
+    }
+    this.setState({ movies: newMovies });
+    // setTimeout(() => {
+    //   currSpinner.classList.remove("shifted-left");
+    // }, 2000);
+    // this.setState({movies: newMovies});
   }
 
   renderInfo(){
@@ -57,10 +79,10 @@ class Spinner extends React.Component {
         
         
         
-        <div className={`right scroll scroll-${this.props.order}`}  onClick={this.scroll}>
+        <div className={`right scroll scroll-${this.props.order}`}  onClick={() => this.scroll('right')}>
           <i className="fa fa-angle-right scroll-btn"></i>
         </div>
-        <div className={`left scroll scroll-${this.props.order}`} onClick={this.scroll}>
+        <div className={`left scroll scroll-${this.props.order}`} onClick={() => this.scroll('left')}>
           <i className="fa fa-angle-left scroll-btn"></i>
         </div>
         {/* <MovieInfoContainer */}

@@ -27,7 +27,7 @@
   display: flex;
   // flex-wrap: nowrap;
   overflow: hidden;
-  overflow: scroll;
+  // overflow: scroll;
   flex-direction: column;
   // align-items: center;
   align-items: flex-start;
@@ -62,22 +62,35 @@
   position: relative;
   // overflow: scroll;
   // top: 25px;
-  // left: -222px;
+  left: 0;
   // margin-left: 54px;
   // perfect adjustment: 276px;
+  transition: left 1s ease-in-out;
 }
 
 .tn-wrapper {
   height: 200px;
   display: flex;
   align-items: center;
-  // overflow: scroll;
+  // justify-content: center;
+  // overflow: hidden;
+  position: relative;
+  transition: left 2s ease-in-out;
+}
+
+.shifted-left {
+  left: -276px;
+}
+
+.shifted-right {
+  right: 276;
 }
 
 .spinner-item{
   // display: inline-block;
   position: relative;
   height: 150px;
+  // max-width: 270px;
   margin: 0 3px;
   z-index: 20;
   cursor: pointer;
@@ -85,6 +98,12 @@
   transition: height 0.3s, border 0.5s ease;
   box-sizing: border-box;
   border: 0;
+}
+
+.spinner-item img {
+  height: 100%;
+  // width: 90%;
+  object-fit: fill;
 }
 
 .enlarge:hover {
@@ -117,7 +136,7 @@
   top: 60px;
   height: 150px;
   width: 57px;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,1);
   // background: linear-gradient(to left, #000, transparent);
   // right: 0;
   z-index: 25;
@@ -140,7 +159,7 @@
 };
 
 .scroll:hover {
-  background: rgba(0, 0, 0, 0.5);
+  // background: rgba(0, 0, 0, 0.5);
   font-size: 60px;
 }
 
