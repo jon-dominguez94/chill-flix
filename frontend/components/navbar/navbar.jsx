@@ -45,41 +45,49 @@ const Navbar = (props) => {
               <Link className="nav-link-item" to="/list">My List</Link>
               {/* <h1 className="nav-link-item">Welcome, {props.currentUser.email}!</h1> */}
             </div>
-            <div className="nav-controls" 
-            >
-                <div>
+            <div className="nav-controls">
+                <div className="nav-items wsearch">
+
+                  <div className="search-controls">
+                    <div className="search-btn" >
+                      <i className="fa fa-search"></i>
+                    </div>
+                    <input type="text" placeholder="Search by title"/>
+                  </div>
+
+
                   <div className="profile-dropdown" >
                   {/* <div className="profile-dropdown"> */}
                     <img className="profile-logo" src="https://assets.nflxext.com/ffe/profiles/avatars_v2/32x32/PICON_025.png" alt=""/>
                     <i className="fa fa-caret-down"></i>
                   </div>
-                <div id="my-dropdown" className="dropdown-content" onMouseOver={() => {
-                  const openDropdown = document.getElementById("my-dropdown");
-                  if (!openDropdown.classList.contains('show')) {
-                    openDropdown.classList.add('show');
-                  }
-                }} onMouseOut={() => {
-                  const openDropdown = document.getElementById("my-dropdown");
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }}>
-                    <section className="drop-item manage-link" >Manage Profiles</section>
-                    <section className="drop-item" onClick={() => props.logout()}>Logout of Chillflix</section>
+                  <div id="my-dropdown" className="dropdown-content" onMouseOver={() => {
+                    const openDropdown = document.getElementById("my-dropdown");
+                    if (!openDropdown.classList.contains('show')) {
+                      openDropdown.classList.add('show');
+                    }
+                  }} onMouseOut={() => {
+                    const openDropdown = document.getElementById("my-dropdown");
+                    if (openDropdown.classList.contains('show')) {
+                      openDropdown.classList.remove('show');
+                    }
+                  }}>
+                      <section className="drop-item manage-link" >Manage Profiles</section>
+                      <section className="drop-item" onClick={() => props.logout()}>Logout of Chillflix</section>
+                    </div>
                   </div>
-                </div>
-              <div className="nav-control-wrapper" onMouseOver={() => {
-                const openDropdown = document.getElementById("my-dropdown");
-                if (!openDropdown.classList.contains('show')) {
-                  openDropdown.classList.add('show');
-                }
-              }} onMouseOut={() => {
-                const openDropdown = document.getElementById("my-dropdown");
+                  <div className="nav-control-wrapper" onMouseOver={() => {
+                    const openDropdown = document.getElementById("my-dropdown");
+                    if (!openDropdown.classList.contains('show')) {
+                      openDropdown.classList.add('show');
+                    }
+                }} onMouseOut={() => {
+                 const openDropdown = document.getElementById("my-dropdown");
                 if (openDropdown.classList.contains('show')) {
                   openDropdown.classList.remove('show');
                 }
               }}></div>
-              </div>
+            </div>
           </div>
         </div>
       </div>

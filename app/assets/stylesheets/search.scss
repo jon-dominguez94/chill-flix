@@ -1,0 +1,15 @@
+.search-controls {
+  display: flex;
+  justify-content: space-between;
+  border: 0.5px solid white;
+  padding: 3px 0;
+}
+
+.search-btn {
+  font-size: 22px;
+  width: 30px;
+}
+
+.search-controls input {
+  width: 230px;
+}

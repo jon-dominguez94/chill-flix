@@ -4,9 +4,10 @@
   width: 100vw;
   height: auto;
   top: 90%;
-  // display:flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
+  display:flex;
+  flex-direction: column;
+  transition:flex 0.3s ease-out;
+  justify-content: flex-start;
   // align-items: flex-start;
 }
 .category-header {

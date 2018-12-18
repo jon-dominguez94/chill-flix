@@ -151,10 +151,12 @@
 
 .info-drop-container {
   width: 100%;
-  height: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.5s, opacity 0.5s,height 0.5s linear;
+  height: auto;
+  flex: 1;
+  transition:flex 0.3s ease-out;
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: visibility 0.5s, opacity 0.5s,height 0.5s linear;
 }
 
 .info-drop-shown {
