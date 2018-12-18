@@ -4,9 +4,12 @@ import { withRouter } from 'react-router-dom';
 
 const mstp = (state, ownProps) => {
   const movieId = ownProps.match.params.movieId;
-  const valid = state.entities.movies.hasOwnProperty(movieId);
+  const spinnerId = ownProps.match.params.spinnerId;
+  debugger
+  const valid_movie = state.entities.movies.hasOwnProperty(movieId)
+  // const same_spinner = order === spinnerId;
   return ({
-    valid,
+    valid: valid_movie,
     movie: state.entities.movies[movieId]
   });
 };

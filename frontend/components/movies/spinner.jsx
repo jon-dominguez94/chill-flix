@@ -44,7 +44,14 @@ class Spinner extends React.Component {
           {/* <MovieInfoContainer /> */}
         </div>
         
-        <Route path="/browse/:movieId" component={MovieInfoContainer}/>
+        {/* <Route path="/browse/:spinnerId/:movieId" component={MovieInfoContainer} /> */}
+
+        <Route 
+          path="/browse/:spinnerId/:movieId"
+          render={(routeProps) => (
+            <MovieInfoContainer {...routeProps} {...this.props} />
+        )} />
+       
         
         
         

@@ -58,7 +58,7 @@ class SpinnerItem extends React.Component {
         </div>
         
         <div className="info-down">
-          <Link to={`/browse/${this.props.movie.id}`}>
+          <Link to={`/browse/${this.props.order}/${this.props.movie.id}`}>
             <i className="fa fa-angle-down" onClick={this.expand}></i>
           </Link>
         </div>
