@@ -1,15 +1,42 @@
 .search-controls {
+  min-width: 30px;
   display: flex;
   justify-content: space-between;
-  border: 0.5px solid white;
-  padding: 3px 0;
+  border: 0.5px solid transparent;
+  // border: 0.5px solid white;
+  padding: 5px 0;
+  // transition: width 0.5s ease-in-out;
 }
 
 .search-btn {
   font-size: 22px;
   width: 30px;
+  margin: 0;
 }
 
 .search-controls input {
   width: 230px;
+  width: 0px;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.white {
+  border-color: white;
+}
+
+.not-displayed {
+  width: 230px !important;
+}
+
+.wsearch {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-controls {
+  display: flex;
+  justify-content: flex-end;
 }
