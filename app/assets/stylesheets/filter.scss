@@ -20,12 +20,25 @@
   // width: auto;
   height: 100%;
   position: relative;
-  cursor: pointer;
+  // cursor: pointer;
+}
+
+.filtered-item:hover > * {
+  visibility: visible;
+  opacity: 1;
+  // height: 400px;
 }
 
 .filtered-item img {
   // object-fit: cover;
   height: 100%;
   // width: auto;
+}
+
+.search-play {
+  // position: absolute;
+  // top: 28%;
+  // left: 38%;
+  font-size: 70px;
 }
 
