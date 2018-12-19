@@ -27,6 +27,7 @@ class Navbar extends React.Component {
     this.props.history.push('/browse');
     document.getElementById("search-controls").classList.remove('white');
     document.getElementById("search-input").classList.remove('not-displayed');
+    document.getElementById("search-input").value="";
     document.getElementById("search-closer").classList.remove('close-width');
 
   }
@@ -43,6 +44,7 @@ class Navbar extends React.Component {
       this.props.history.push('/browse/search?=');
       document.getElementById("search-controls").classList.add('white');
       document.getElementById("search-input").classList.add('not-displayed');
+      document.getElementById("search-input").focus();
       document.getElementById("search-closer").classList.add('close-width');
     // }
   }

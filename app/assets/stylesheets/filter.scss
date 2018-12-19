@@ -1,0 +1,31 @@
+.search-results-container {
+  padding: 0 55px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 100px;
+  justify-content: center;
+}
+
+.filtered-movie-container {
+  // min-width: 200px;
+  // min-height: 110px;
+  max-width: 250px;
+  max-height: 140px;
+  margin: 25px 5px;
+}
+
+.filtered-item {
+  // width: 200px;
+  // width: auto;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.filtered-item img {
+  // object-fit: cover;
+  height: 100%;
+  // width: auto;
+}
+

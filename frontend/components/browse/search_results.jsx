@@ -39,13 +39,13 @@ class SearchResults extends React.Component {
 
     const filtered = this.state.filtered.map(movie => 
       (
-        <div className="filtered-movie-container">
-          <FilteredItem movie={movie} />
+        <div key={movie.id} className="filtered-movie-container">
+          <FilteredItem key={movie.id} movie={movie} />
         </div>
       )
     );
     return (
-      <div class="search-results-container">
+      <div className="search-results-container">
         {filtered}
       </div>
     );
