@@ -40,6 +40,12 @@
   // height: 75vh;
 }
 
+.main-gif {
+  width: 100%;
+  position: relative;
+  content: url('https://s3-us-west-1.amazonaws.com/chillflix-prod/ezgif.com-video-to-gif.gif');
+  z-index: -10;
+}
 .main-video-info {
   padding-left: 55px;
   position: absolute;
@@ -47,6 +53,7 @@
   width: 35%;
   max-width: 450px;
   transition: top 0.3s;
+  // z-index: 2000;
 }
 
 .main-video-title {
