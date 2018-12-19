@@ -8,12 +8,18 @@ const BrowseContainer = () => {
 
   let pathname = window.location.href;
   // alert(window.location.href);
-  let query = [pathname.split('=')[1]];
-  let otherProps = {
-    query: query
-  };
-  alert(query);
+  let query;
+  if(pathname.includes('search?=')){
+    query = [pathname.split('=')[1]];
+  }
+  // let otherProps = {
+  //   query: query
+  // };
+  if(query !== undefined){
+    alert(query);
+  }
   // this.forceUpdate();
+  
   return (
     <div className="browse-container">
       <div className="logged-header">
@@ -21,11 +27,11 @@ const BrowseContainer = () => {
       </div>
 
       <Switch>
-        <Route
+        {/* <Route
           path="/browse/search" 
           render={(routeProps) => (
             <SearchResultsContainer {...routeProps} {...otherProps} />
-        )} />
+        )} /> */}
         <Route path="/browse" component={MoviesIndexContainer} />
         <Redirect to="/" />
       </Switch>
