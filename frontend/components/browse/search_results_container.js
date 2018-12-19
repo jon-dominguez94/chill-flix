@@ -4,9 +4,11 @@ import { withRouter } from 'react-router-dom';
 import { fetchMovies } from '../../actions/movies_actions';
 
 
-const mstp = (state) => {
+const mstp = (state, ownProps) => {
+  // alert(ownProps.query);
   return ({
-    movies: Object.values(state.entities.movies)
+    movies: Object.values(state.entities.movies),
+    query: ownProps.query
   });
 };
 

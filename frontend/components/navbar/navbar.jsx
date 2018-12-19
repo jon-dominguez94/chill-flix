@@ -8,6 +8,10 @@ class Navbar extends React.Component {
   constructor(props){
     super(props);
 
+    this.state = {
+      queryString: ""
+    };
+
     this.updatePath = this.updatePath.bind(this);
     this.expand = this.expand.bind(this);
   }
@@ -15,6 +19,7 @@ class Navbar extends React.Component {
   updatePath(e) {
     // alert(e.target.value);
     this.props.history.push(`/browse/search?=${e.target.value}`);
+    this.setState({queryString: e.target.value});
   }
 
   expand(){
