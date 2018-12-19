@@ -1,21 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchBarContainer from '../browse/searchbar_container';
 
 class Navbar extends React.Component {
 
 
   constructor(props){
     super(props);
+
+    this.updatePath = this.updatePath.bind(this);
+    this.expand = this.expand.bind(this);
+  }
+
+  updatePath() {
+    return e => {
+      alert(e.target.value);
+    };
   }
 
   expand(){
     // document.getElementById("search-input").style.display = "inline-block";
     // document.getElementById("search-controls").style.borderColor = "white";
-    document.getElementById("search-input").classList.toggle('not-displayed');
     document.getElementById("search-controls").classList.toggle('white');
+    document.getElementById("search-input").classList.toggle('not-displayed');
+    this.props.history.push('/search?=');
   }
 
   render(){
+
+    // const {pathname} = this.props.location;
+    // // alert(pathname);
+    // if(pathname.includes("search")){
+    //   this.expand();
+    // }
     if (this.props.currentUser === undefined) {
       return (
         <div className="splash-container">
@@ -62,11 +79,16 @@ class Navbar extends React.Component {
               <div className="nav-controls">
                   <div className="nav-items wsearch">
 
-                  <div id="search-controls" className="search-controls">
-                      <div className="search-btn" onClick={() => this.expand()} >
+                    <div id="search-controls" className="search-controls">
+                    <div className="search-btn" onClick={() => this.expand()} onChange={this.updatePath} >
+                    {/* <div className="search-btn" onClick={() => this.props.history.push('/search?=')} > */}
                         <i className="fa fa-search"></i>
                       </div>
                       <input id="search-input" type="text" placeholder="Search by title"/>
+                    </div>
+
+                    <div>
+                      {/* <SearchBarContainer /> */}
                     </div>
 
 
