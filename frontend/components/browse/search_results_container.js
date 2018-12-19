@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import SearchResults from './searchbar';
+import SearchResults from './search_results';
 import { withRouter } from 'react-router-dom';
 import { fetchMovies } from '../../actions/movies_actions';
 

@@ -12,18 +12,24 @@ class Navbar extends React.Component {
     this.expand = this.expand.bind(this);
   }
 
-  updatePath() {
-    return e => {
-      alert(e.target.value);
-    };
+  updatePath(e) {
+    // alert(e.target.value);
+    this.props.history.push(`/browse/search?=${e.target.value}`);
   }
 
   expand(){
     // document.getElementById("search-input").style.display = "inline-block";
     // document.getElementById("search-controls").style.borderColor = "white";
-    document.getElementById("search-controls").classList.toggle('white');
-    document.getElementById("search-input").classList.toggle('not-displayed');
-    this.props.history.push('/search?=');
+    const { pathname } = this.props.location;
+    if (pathname.includes("search")) {
+      this.props.history.push('/browse');
+      document.getElementById("search-controls").classList.remove('white');
+      document.getElementById("search-input").classList.remove('not-displayed');
+    } else {
+      this.props.history.push('/browse/search?=');
+      document.getElementById("search-controls").classList.add('white');
+      document.getElementById("search-input").classList.add('not-displayed');
+    }
   }
 
   render(){
@@ -80,11 +86,12 @@ class Navbar extends React.Component {
                   <div className="nav-items wsearch">
 
                     <div id="search-controls" className="search-controls">
-                    <div className="search-btn" onClick={() => this.expand()} onChange={this.updatePath} >
+                    {/* <div className="search-btn" onClick={() => this.expand()} onChange={this.updatePath} > */}
+                    <div className="search-btn" onClick={() => this.expand()} >
                     {/* <div className="search-btn" onClick={() => this.props.history.push('/search?=')} > */}
                         <i className="fa fa-search"></i>
                       </div>
-                      <input id="search-input" type="text" placeholder="Search by title"/>
+                    <input id="search-input" type="text" placeholder="Search by title" defaultValue="" onChange={this.updatePath}/>
                     </div>
 
                     <div>
