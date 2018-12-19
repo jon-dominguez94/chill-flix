@@ -14,6 +14,7 @@ class Navbar extends React.Component {
 
     this.updatePath = this.updatePath.bind(this);
     this.expand = this.expand.bind(this);
+    this.collapse = this.collapse.bind(this);
   }
 
   updatePath(e) {
@@ -22,19 +23,28 @@ class Navbar extends React.Component {
     this.setState({queryString: e.target.value});
   }
 
+  collapse(){
+    this.props.history.push('/browse');
+    document.getElementById("search-controls").classList.remove('white');
+    document.getElementById("search-input").classList.remove('not-displayed');
+    document.getElementById("search-closer").classList.remove('close-width');
+
+  }
+
   expand(){
     // document.getElementById("search-input").style.display = "inline-block";
     // document.getElementById("search-controls").style.borderColor = "white";
     const { pathname } = this.props.location;
-    if (pathname.includes("search")) {
-      this.props.history.push('/browse');
-      document.getElementById("search-controls").classList.remove('white');
-      document.getElementById("search-input").classList.remove('not-displayed');
-    } else {
+    // if (pathname.includes("search")) {
+    //   this.props.history.push('/browse');
+    //   document.getElementById("search-controls").classList.remove('white');
+    //   document.getElementById("search-input").classList.remove('not-displayed');
+    // } else {
       this.props.history.push('/browse/search?=');
       document.getElementById("search-controls").classList.add('white');
       document.getElementById("search-input").classList.add('not-displayed');
-    }
+      document.getElementById("search-closer").classList.add('close-width');
+    // }
   }
 
   render(){
@@ -92,11 +102,16 @@ class Navbar extends React.Component {
 
                     <div id="search-controls" className="search-controls">
                     {/* <div className="search-btn" onClick={() => this.expand()} onChange={this.updatePath} > */}
-                    <div className="search-btn" onClick={() => this.expand()} >
-                    {/* <div className="search-btn" onClick={() => this.props.history.push('/search?=')} > */}
+                      <div className="search-btn" onClick={() => this.expand()} >
+                      {/* <div className="search-btn" onClick={() => this.props.history.push('/search?=')} > */}
                         <i className="fa fa-search"></i>
                       </div>
-                    <input id="search-input" type="text" placeholder="Search by title" defaultValue="" onChange={this.updatePath}/>
+      
+                      <input id="search-input" type="text" placeholder="Search by title" defaultValue="" onChange={this.updatePath}/>
+
+                      <div id="search-closer" className="search-btn search-closer" onClick={() => this.collapse()} >
+                        <i className="fa fa-times"></i>
+                      </div>
                     </div>
 
                     <div>

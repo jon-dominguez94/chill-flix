@@ -6,6 +6,8 @@
   // border: 0.5px solid white;
   padding: 5px 0;
   transition: width 0.3s linear;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .search-btn {
@@ -32,7 +34,7 @@
 }
 
 .not-displayed {
-  width: 230px !important;
+  width: 260px !important;
 }
 
 .wsearch {
@@ -43,4 +45,14 @@
 .nav-controls {
   display: flex;
   justify-content: flex-end;
+}
+
+.search-closer {
+  // display: none;
+  width: 0px;
+}
+
+.close-width {
+  // display: block;
+  width: 30px;
 }

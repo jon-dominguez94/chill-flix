@@ -1,4 +1,5 @@
 import React from 'react';
+import FilteredItem from './filtered_item';
 
 class SearchResults extends React.Component {
   constructor(props) {
@@ -9,8 +10,8 @@ class SearchResults extends React.Component {
     // alert(props.query);
 
     this.state = {
-      queryString: props.query,
-      movies: props.movies,
+      // queryString: props.query,
+      // movies: props.movies,
       filtered: props.movies
     };
   }
@@ -19,17 +20,33 @@ class SearchResults extends React.Component {
     this.props.fetchMovies();
   }
 
+  componentDidUpdate(prevProps){
+    if(this.props.query !== prevProps.query){
+      const filteredMovies = this.props.movies.filter(movie => movie.title.toLowerCase().includes(this.props.query));
+      // alert(filteredMovies);
+      this.setState({filtered: filteredMovies});
+    }
+  }
+
   render() {
-    if(this.state.movies === undefined){
+    if(this.props.movies === undefined){
       return (
         <div>
-          fucked up
+          rerender
         </div>
       );
     }
+
+    const filtered = this.state.filtered.map(movie => 
+      (
+        <div className="filtered-movie-container">
+          <FilteredItem movie={movie} />
+        </div>
+      )
+    );
     return (
-      <div>
-        <p>why isnt this working</p>
+      <div class="search-results-container">
+        {filtered}
       </div>
     );
   }
