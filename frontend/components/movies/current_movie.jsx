@@ -50,9 +50,9 @@ class CurrentMovie extends React.Component {
       
       <div id="video-container">
         <video className="current-video" width="100vw" height="auto" controls>
-          <source src={this.props.movie.url} type="video/mp4" />
+          {/* <source src={this.props.movie.url} type="video/mp4" /> */}
           {/* <source src="/assets/com.mp4" type="video/mp4" /> */}
-          {/* <source src={window.oldvid} type="video/mp4" /> */}
+          <source src={window.oldvid} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         {/* <div id="video-controls"> */}
