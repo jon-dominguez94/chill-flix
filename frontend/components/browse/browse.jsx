@@ -23,6 +23,8 @@ class Browse extends React.Component{
       // debugger
       if (pathname.includes('search?=')) {
         this.setState({query: pathname.split('=')[1]});
+      } else {
+        this.setState({ query: "" });
       }
     }
   }
