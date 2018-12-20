@@ -1,8 +1,22 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :bigint(8)        not null, primary key
+#  email           :string           not null
+#  password_digest :string           not null
+#  session_token   :string           not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 class User < ApplicationRecord
 
   validates :email, :password_digest, :session_token, presence: true
   validates :email, :session_token, uniqueness: true
   validates :password, length: { minimum: 6, allow_nil: true}
+
+  # validates :list, presence: true
 
   before_validation :ensure_session_token
 
@@ -12,6 +26,11 @@ class User < ApplicationRecord
     primary_key: :id,
     foreign_key: :user_id,
     class_name: :Profile
+
+  has_one :list,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: :List
 
   # has_one_attached :photo
 
