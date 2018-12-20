@@ -9,46 +9,7 @@ class Browse extends React.Component{
   constructor(props){
     super(props);
 
-    this.state = {
-      queryString: ""
-    };
-    // let otherProps = {
-    //   query: query
-    // };
-    // if(query !== undefined){
-    //   // alert(query);
-    // }
 
-  }
-
-  componentDidMount() {
-    // let pathname = window.location.href;
-    // let query = "";
-    // if (pathname.includes('search?=')) {
-    //   query = [pathname.split('=')[1]];
-    // }
-    // this.setState({
-    //   queryString: query
-    // });
-    // if(this.props.query !== ""){
-    //   // this.setState({query: this.props.query})
-    //   alert("none");
-    // } else {
-    //   alert(this.props.query);
-    // }
-  }
-
-  componentDidUpdate(prevProps){
-    // if(this.props.query !== prevProps.query){
-    //   alert(this.props.query);
-    // }
-    // let pathname = window.location.href;
-    // let query = "";
-    // if (pathname.includes('search?=')) {
-    //   query = [pathname.split('=')[1]];
-    // }
-    // this.setState({query: query});
-    // alert(this.state.queryString);
   }
 
   render(){
@@ -59,16 +20,7 @@ class Browse extends React.Component{
           <div className="logged-header">
             <NavbarContainer />
           </div>
-
-          {/* <Switch> */}
-            {/* <Route
-              path="/browse/search" 
-              render={(routeProps) => (
-                <SearchResultsContainer {...routeProps} {...otherProps} />
-            )} /> */}
-            <Route path="/browse" component={MoviesIndexContainer} />
-            {/* <Redirect to="/" /> */}
-          {/* </Switch> */}
+            <MoviesIndexContainer />
         </div>
       );
     } else {
@@ -77,18 +29,7 @@ class Browse extends React.Component{
           <div className="logged-header">
             <NavbarContainer />
           </div>
-
-          {/* <Switch> */}
-            {/* <Route
-              path="/browse/search" 
-              render={(routeProps) => (
-                <SearchResultsContainer {...routeProps} {...otherProps} />
-            )} /> */}
-            {/* <Route path="/browse" component={MoviesIndexContainer} /> */}
-            {/* <Redirect to="/" /> */}
-          {/* </Switch> */}
           <SearchResultsContainer movies={this.props.movies} query={this.props.query}/>
-
         </div>
       );
     }
