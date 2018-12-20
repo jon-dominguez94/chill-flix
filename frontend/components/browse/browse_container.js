@@ -7,9 +7,9 @@ const mstp = (state, ownProps) => {
   // alert(ownProps.query);
   let pathname = window.location.href;
   let query = "";
-  debugger
+  // debugger
   if (pathname.includes('search?=')) {
-    query = [pathname.split('=')[1]];
+    query = pathname.split('=')[1];
   }
   return ({
     movies: Object.values(state.entities.movies),
