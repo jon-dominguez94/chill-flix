@@ -9,8 +9,8 @@ const MainVideo = (props) => {
 
      {/* <img src={props.video.thumbnail} /> */}
      {/* <img src={image_url('/assets/old.png')} alt=""/> */}
-     {/* <div className="main-gif"></div> */}
-     <img src={window.oldtn}/>
+     <div className="main-gif"></div>
+     {/* <img src={window.oldtn}/> */}
     
 
     <div className="main-video-info">

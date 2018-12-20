@@ -62,8 +62,8 @@ class SpinnerItem extends React.Component {
 
     return (
       <div id={`spinner-${this.props.order}-${this.props.movie.id}`} className="spinner-item enlarge">
-        {/* <img className="movie-tn" src={this.props.movie.thumbnail} /> */}
-        <img className="movie-tn" src={window.oldtn} />
+        <img className="movie-tn" src={this.props.movie.thumbnail} />
+        {/* <img className="movie-tn" src={window.oldtn} /> */}
 
         <div className="tn-info">
           <a href="#" className="round-button">
