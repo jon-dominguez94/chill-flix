@@ -7,6 +7,7 @@ const mstp = (state, ownProps) => {
   // alert(ownProps.query);
   let pathname = window.location.href;
   let query = "";
+  debugger
   if (pathname.includes('search?=')) {
     query = [pathname.split('=')[1]];
   }
