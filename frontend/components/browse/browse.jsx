@@ -9,12 +9,28 @@ class Browse extends React.Component{
   constructor(props){
     super(props);
 
+      this.state = {
+        query: this.props.query
+      };
 
   }
 
+  componentDidUpdate(prevProps) {
+    // debugger;
+
+    if(this.props.location.search !== prevProps.location.search){
+      let pathname = window.location.href;
+      // debugger
+      if (pathname.includes('search?=')) {
+        this.setState({query: pathname.split('=')[1]});
+      }
+    }
+  }
+
+
   render(){
 
-    if(this.props.query === ""){
+    if(this.state.query === ""){
       return (
         <div className="browse-container">
           <div className="logged-header">
@@ -29,7 +45,7 @@ class Browse extends React.Component{
           <div className="logged-header">
             <NavbarContainer />
           </div>
-          <SearchResultsContainer movies={this.props.movies} query={this.props.query}/>
+          <SearchResultsContainer movies={this.props.movies} query={this.state.query}/>
         </div>
       );
     }
