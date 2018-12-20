@@ -35,7 +35,9 @@
 
 .attached-info img{
   // height:100%;
-  // width: 90%;
+
+  width: 100%;
+  height: auto;
   // object-fit: contain;
   // visibility: visible;
   // opacity: 1;
@@ -92,6 +94,7 @@
 
 .on-popup {
   top: 20%;
+  padding-left: 0;
 }
 
 .space-below {
@@ -115,6 +118,13 @@
   // border-color: transparent transparent transparent white;
   color: white;
   transition: padding 0.1s linear;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.info-black {
+  padding: 9px 30px;
 }
 
 .info-black:hover{
@@ -165,4 +175,8 @@
   height: 400px;
   visibility: visible;
   opacity: 1;
+}
+
+.list-btn {
+  box-sizing: border-box;
 }
