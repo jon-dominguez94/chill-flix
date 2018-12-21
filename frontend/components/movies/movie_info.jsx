@@ -117,6 +117,7 @@ class MovieInfo extends React.Component {
         </div>
         <div className="info-close" onClick={this.close}>
           <i className="fa fa-close"></i>
+          {/* <span className="close-x">𝖷</span> */}
         </div>
       </div>
     );

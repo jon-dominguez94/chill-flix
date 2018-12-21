@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import CurrentMovie from './current_movie';
-import { fetchMovie } from '../../actions/movies_actions';
+import { fetchMovie, fetchMovies } from '../../actions/movies_actions';
 import { withRouter } from 'react-router-dom';
 
 const mstp = (state, ownProps) => {
@@ -8,13 +8,15 @@ const mstp = (state, ownProps) => {
   const valid = state.entities.movies.hasOwnProperty(movieId);
   return ({
     valid: valid,
-    movie: state.entities.movies[movieId]
+    movie: state.entities.movies[movieId],
+    movies: Object.values(state.entities.movies)
   });
 };
 
 const mdtp = dispatch => {
   return ({
-    fetchMovie: id => dispatch(fetchMovie(id))
+    fetchMovie: id => dispatch(fetchMovie(id)),
+    fetchMovies: () => dispatch(fetchMovies())
   });
 };
 
