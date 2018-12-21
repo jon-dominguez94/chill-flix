@@ -238,7 +238,7 @@
   width: 30px;
   height: 30px;
   padding: 4px 0 10px 0;
-  border: 0.5px solid white;
+  border: 0.5px solid rgb(155, 155, 155);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,9 +250,12 @@
 }
 
 .tn-plus-wrapper:hover {
-  background: rgba(255, 255, 255, 0.5);
-  border-color: black;
-  color: black;
+  // background: rgba(255, 255, 255, 0.8);
+  border: 1.5px solid white;
+  // width: 32px;
+  // height: 32px;
+  // color: black;
+  color: white;
 }
 
 .list-adder {
