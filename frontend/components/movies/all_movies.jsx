@@ -41,10 +41,10 @@ const AllVideos = (props) => {
 
   return (
     <div className="spinner-container">
-      <Spinner category="Recently Added" movies={shuffle(movies1)} order="1"/>
-      <Spinner category="Popular on Chillflix" movies={shuffle(movies2)} order="2"/>
-      <Spinner category="Chill Night" movies={shuffle(movies3)} order="3"/>
-      <Spinner category="Because You Watched The Comeback" movies={shuffle(movies4)} order="4"/>
+      <Spinner category="Recently Added" movies={movies1.slice(0,8)} order="1"/>
+      <Spinner category="Popular on Chillflix" movies={movies1.slice(8)} order="2"/>
+      <Spinner category="Chill Night" movies={shuffle(movies2).slice(0,8)} order="3"/>
+      <Spinner category="Because You Watched The Comeback" movies={shuffle(movies2).slice(8)} order="4"/>
     </div>
   );
 };

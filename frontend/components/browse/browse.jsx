@@ -15,6 +15,10 @@ class Browse extends React.Component{
 
   }
 
+  componentDidMount(){
+    this.props.fetchMovies();
+  }
+
   componentDidUpdate(prevProps) {
     // debugger;
 
@@ -31,7 +35,9 @@ class Browse extends React.Component{
 
 
   render(){
-
+    // if(this.props.movies.length < 10){
+    //   this.props.fetchMovies();
+    // }
     if(this.state.query === ""){
       return (
         <div className="browse-container">

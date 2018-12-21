@@ -84,10 +84,10 @@ class Spinner extends React.Component {
         
         
         
-        <div className={`right scroll scroll-${this.props.order}`}  onClick={() => this.scroll('right')}>
+        <div className={`right scroll scroll-${this.props.order}`}  onClick={() => this.scroll('left')}>
           <i className="fa fa-angle-right scroll-btn"></i>
         </div>
-        <div className={`left scroll scroll-${this.props.order}`} onClick={() => this.scroll('left')}>
+        <div className={`left scroll scroll-${this.props.order}`} onClick={() => this.scroll('right')}>
           <i className="fa fa-angle-left scroll-btn"></i>
         </div>
         {/* <MovieInfoContainer */}
