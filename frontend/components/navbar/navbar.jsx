@@ -12,6 +12,11 @@ class Navbar extends React.Component {
       queryString: ""
     };
 
+    this.username = props.currentUser.email;
+    if(this.username.includes("@")){
+      this.username = this.username.split("@")[0];
+    }
+
     this.updatePath = this.updatePath.bind(this);
     this.expand = this.expand.bind(this);
     this.collapse = this.collapse.bind(this);
@@ -137,7 +142,7 @@ class Navbar extends React.Component {
                         openDropdown.classList.remove('show');
                       }
                     }}>
-                        <section className="drop-item manage-link" >Manage Profiles</section>
+                        <section className="drop-item manage-link" >Hello, {this.username}!</section>
                         <section className="drop-item" onClick={() => this.props.logout()}>Logout of Chillflix</section>
                       </div>
                     </div>
