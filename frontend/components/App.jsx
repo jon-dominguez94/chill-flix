@@ -15,6 +15,7 @@ const App = () => (
       {/* <h1>ChillFlix</h1> */}
     </header>
     <Switch>
+      {/* <Route path="/" component = {NavbarContainer} /> */}
       <AuthRoute exact path="/" component={NavbarContainer} />
       <ProtectedRoute path="/browse" component={BrowseContainer} />
       {/* <ProtectedRoute path="/search" component={SearchPage} /> */}
