@@ -239,12 +239,20 @@
   border-radius: 50%;
   font-size: 25px;
   font-weight: 200;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background 0.3s, border-color 0.3s linear;
+}
+
+.tn-plus-wrapper:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: black;
+  color: black;
 }
 
 .list-adder {
   position: absolute;
   right: 20px;
-  bottom: 16%;
+  bottom: 20%;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.3s,
