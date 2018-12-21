@@ -52,8 +52,16 @@ class CurrentMovie extends React.Component {
     return(
       
       <div id="video-container">
-        <video className="current-video" width="100vw" height="auto" controls>
-          <source src={this.props.movie.url} type="video/mp4" />
+        <video 
+          className="current-video" 
+          width="100vw" 
+          height="auto" 
+          src={this.props.movie.url}
+          controls 
+          autoPlay
+          // ng-src={this.props.movie.url}
+        >
+          {/* <source src={this.props.movie.url} type="video/mp4" /> */}
           {/* <source src="/assets/com.mp4" type="video/mp4" /> */}
           {/* <source src={window.oldvid} type="video/mp4" /> */}
           Your browser does not support the video tag.

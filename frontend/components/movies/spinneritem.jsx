@@ -71,9 +71,9 @@ class SpinnerItem extends React.Component {
 
         <div className="tn-info">
             <Link to={`/watch/${this.props.movie.id}`}>
-          <a href="#" className="round-button">
+          <p className="round-button">
             <i className="fa fa-play fa-2x"></i>
-          </a>
+          </p>
           </Link>
           <p className="tn-title">{this.props.movie.title}</p>
         </div>
