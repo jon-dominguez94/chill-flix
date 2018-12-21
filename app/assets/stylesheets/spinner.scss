@@ -197,6 +197,7 @@
 }
 
 .round-button {
+  z-index: 1000;
   box-sizing: border-box;
   display: block;
   width: 40px;
@@ -210,6 +211,11 @@
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 10px;
   transition: all 0.3s ease;
+}
+
+.round-button:hover {
+  width: 42px;
+  height: 42px;
 }
 
 .tn-title {

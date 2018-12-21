@@ -65,16 +65,19 @@ class SpinnerItem extends React.Component {
         <img className="movie-tn" src={this.props.movie.thumbnail} />
         {/* <img className="movie-tn" src={window.oldtn} /> */}
 
-        <div className="tn-info">
-          <a href="#" className="round-button">
-            <i className="fa fa-play fa-2x"></i>
-          </a>
-          <p className="tn-title">{this.props.movie.title}</p>
-        </div>
-
         <Link to={`/watch/${this.props.movie.id}`}>
           <div className="play-area"></div>
         </Link>
+
+        <div className="tn-info">
+            <Link to={`/watch/${this.props.movie.id}`}>
+          <a href="#" className="round-button">
+            <i className="fa fa-play fa-2x"></i>
+          </a>
+          </Link>
+          <p className="tn-title">{this.props.movie.title}</p>
+        </div>
+
 
         <div className="list-adder">
           {/* <i className="fa fa-plus-circle fa-2x fa_custom"></i> */}
